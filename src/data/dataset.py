@@ -86,7 +86,7 @@ class FoodDataset(Dataset):
             
         except Exception as e:
             # 记录损坏的图片（可选）
-            print(f"⚠️  Invalid image detected: {image_path} - {str(e)}")
+            # print(f"⚠️  Invalid image detected: {image_path} - {str(e)}")
             return False
     
     def _filter_data(self) -> List[Dict]:
