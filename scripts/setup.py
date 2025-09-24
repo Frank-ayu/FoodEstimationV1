@@ -31,7 +31,7 @@ def setup_directories():
     """创建必要的目录"""
     directories = [
         "models",
-        "cal_data",
+        # "cal_data",
         "checkpoints",
         "logs",
         "results",
@@ -55,7 +55,7 @@ def check_data_structure():
         # 检查数据格式
         try:
             import json
-            with open("cal_meta.json", 'r') as f:
+            with open("cal_meta_split.json", 'r') as f:
                 data = json.load(f)
             
             # 统计数据
@@ -77,12 +77,12 @@ def check_data_structure():
         return False
     
     # 检查图片目录
-    if os.path.exists("cal_data"):
+    if os.path.exists("/root/autodl-tmp/data/cal_data"):
         print("✓ Found cal_data directory")
         
         # 统计图片数量
         image_count = 0
-        for root, dirs, files in os.walk("cal_data"):
+        for root, dirs, files in os.walk("/root/autodl-tmp/data/cal_data"):   
             for file in files:
                 if file.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp')):
                     image_count += 1
