@@ -22,10 +22,10 @@ def run_command(cmd, description):
         print(f"Error output: {e.stderr}")
         return False
 
-def install_requirements():
-    """安装依赖包"""
-    print("Installing Python packages...")
-    return run_command("pip install -r requirements.txt", "Installing requirements")
+# def install_requirements():
+#     """安装依赖包"""
+#     print("Installing Python packages...")
+#     return run_command("pip install -r requirements.txt", "Installing requirements")
 
 def setup_directories():
     """创建必要的目录"""
@@ -49,8 +49,8 @@ def check_data_structure():
     print("\nChecking data structure...")
     
     # 检查cal_meta.json
-    if os.path.exists("cal_meta.json"):
-        print("✓ Found cal_meta.json")
+    if os.path.exists("cal_meta_split.json"):
+        print("✓ Found cal_meta_split.json")
         
         # 检查数据格式
         try:
@@ -73,7 +73,7 @@ def check_data_structure():
             print(f"✗ Error reading cal_meta.json: {e}")
             return False
     else:
-        print("✗ cal_meta.json not found")
+        print("✗ cal_meta_split.json not found")
         return False
     
     # 检查图片目录
@@ -143,10 +143,6 @@ def main():
     print("Food VLM Training Environment Setup")
     print("="*60)
     
-    # 1. 安装依赖
-    if not install_requirements():
-        print("Failed to install requirements. Please check your Python environment.")
-        return False
     
     # 2. 创建目录
     setup_directories()
