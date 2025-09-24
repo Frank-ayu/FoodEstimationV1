@@ -54,8 +54,12 @@ class FoodVLMTrainer:
         
         # 获取数据配置
         data_config = self.config['data']
+
+        print(f"Data config: {data_config}")
         training_config = self.config['training']
+        print(f"Training config: {training_config}")
         model_info = self.config['model']
+        print(f"Model info: {model_info}")
         
         self.train_loader, self.val_loader, self.test_loader = FoodDataLoader.create_data_loaders(
             data_path=data_config['data_path'],
