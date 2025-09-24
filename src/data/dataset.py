@@ -45,9 +45,56 @@ class FoodDataset(Dataset):
         
         print(f"Loaded {len(self.samples)} samples for {split} split using {model_type} model")
     
+    def _is_image_valid(self, image_path: str) -> bool:
+        """
+        检查图片文件是否有效（未损坏）
+        
+        Args:
+            image_path: 图片文件路径
+            
+        Returns:
+            bool: 图片是否有效
+        """
+        try:
+            # 检查文件是否存在
+            if not os.path.exists(image_path):
+                return False
+            
+            # 检查文件大小（至少要有一些内容）
+            if os.path.getsize(image_path) < 100:  # 至少100字节
+                return False
+            
+            # 尝试打开图片
+            with Image.open(image_path) as img:
+                # 验证图片格式
+                img.verify()
+                
+                # 重新打开图片（verify()会关闭文件）
+                with Image.open(image_path) as img2:
+                    # 转换为RGB格式测试
+                    img2.convert('RGB')
+                    
+                    # 检查图片尺寸
+                    width, height = img2.size
+                    if width < 10 or height < 10:  # 图片太小
+                        return False
+                    
+                    # 检查图片是否为空（全黑或全白）
+                    # 这里可以添加更复杂的检查，但为了性能考虑，暂时跳过
+                    
+            return True
+            
+        except Exception as e:
+            # 记录损坏的图片（可选）
+            print(f"⚠️  Invalid image detected: {image_path} - {str(e)}")
+            return False
+    
     def _filter_data(self) -> List[Dict]:
-        """过滤有效数据"""
+        """过滤有效数据 - 包含图片完整性检查"""
         filtered = []
+        corrupted_count = 0
+        total_checked = 0
+        
         for key, item in self.data.items():
             # 检查必要字段
             if (item.get('image_paths') and 
@@ -55,16 +102,28 @@ class FoodDataset(Dataset):
                 item.get('nutr_per_ingredient') and
                 item.get('partition') == self.split):
                 
-                # 检查图片是否存在
+                # 检查图片是否存在且未损坏
                 valid_images = []
-                for img_path in item['image_paths'][-4:]:
+                for img_path in item['image_paths'][-4:]:  # 只检查最后4张图片
                     full_path = os.path.join(self.image_dir, img_path)
-                    if os.path.exists(full_path):
+                    total_checked += 1
+                    
+                    if self._is_image_valid(full_path):
                         valid_images.append(img_path)
+                    else:
+                        corrupted_count += 1
                 
                 if valid_images:
                     item['valid_image_paths'] = valid_images
                     filtered.append((key, item))
+        
+        # 输出统计信息
+        if total_checked > 0:
+            print(f"📊 Image validation results for {self.split} split:")
+            print(f"   Total images checked: {total_checked}")
+            print(f"   Corrupted images: {corrupted_count}")
+            print(f"   Valid images: {total_checked - corrupted_count}")
+            print(f"   Corruption rate: {corrupted_count/total_checked*100:.1f}%")
         
         return filtered
     
@@ -299,11 +358,12 @@ Traffic Light Colors (per 100g):
     def __getitem__(self, idx):
         sample = self.samples[idx]
         
-        # 加载图片
+        # 加载图片 - 这里应该不会出错，因为已经在过滤阶段检查过了
         try:
             image = Image.open(sample['image_path']).convert('RGB')
         except Exception as e:
-            print(f"Error loading image {sample['image_path']}: {e}")
+            # 如果仍然出错，使用默认图片
+            print(f"❌ Unexpected error loading image {sample['image_path']}: {e}")
             image = Image.new('RGB', (224, 224), color='white')
         
         # 构建问答格式（统一QA模式）
@@ -333,9 +393,7 @@ Traffic Light Colors (per 100g):
             'input_ids': inputs['input_ids'],
             'attention_mask': inputs['attention_mask'],
             'pixel_values': inputs['pixel_values'],
-            'question': question,
-            'answer': answer,
-            'metadata': sample['metadata']
+            'labels': inputs['input_ids']  # 添加labels用于训练
         }
 
 
@@ -424,13 +482,13 @@ class FoodDataLoader:
         input_ids = torch.stack([item['input_ids'] for item in batch])
         attention_mask = torch.stack([item['attention_mask'] for item in batch])
         pixel_values = torch.stack([item['pixel_values'] for item in batch])
-        metadata = [item['metadata'] for item in batch]
+        labels = torch.stack([item['labels'] for item in batch])
         
         return {
             'input_ids': input_ids,
             'attention_mask': attention_mask,
             'pixel_values': pixel_values,
-            'metadata': metadata
+            'labels': labels
         }
 
 def main():
