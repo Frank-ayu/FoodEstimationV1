@@ -355,6 +355,9 @@ class FoodDataLoader:
         model_type: str = "llava",
     ) -> tuple:
         """创建数据加载器"""
+
+        print(f"Data path: {data_path}")
+        print(f"Image dir: {image_dir}")
         
         # 创建训练集
         train_dataset = FoodDataset(
