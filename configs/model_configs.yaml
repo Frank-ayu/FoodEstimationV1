@@ -5,7 +5,7 @@ models:
   # LLaVA系列
   llava_7b:
     name: "LLaVA-1.5-7B"
-    model_id: "./models/llava-v1.5-7b-hf"
+    model_id: "./models/llava-1.5-7b-hf"
     model_type: "llava"
     base_model: "llama"
     vision_encoder: "clip"
