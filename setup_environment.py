@@ -62,8 +62,8 @@ def check_data_structure():
     print("\nChecking data structure...")
     
     # 检查cal_meta.json
-    if os.path.exists("cal_meta.json"):
-        print("✓ Found cal_meta.json")
+    if os.path.exists("cal_meta_split.json"):
+        print("✓ Found cal_meta_split.json")
         
         # 检查数据格式
         try:
@@ -115,7 +115,7 @@ def create_config_file():
             "local_model_path": "./models/llava-v1.5-7b"
         },
         "data": {
-            "data_path": "cal_meta.json",
+            "data_path": "cal_meta_split.json",
             "image_dir": "cal_data"
         },
         "training": {
