@@ -176,8 +176,6 @@ output_config:
   
 # 系统配置
 system_config:
-  use_wandb: false
-  wandb_project: "food-vlm-training"
   logging_steps: 10
   eval_steps: 100
   save_steps: 200

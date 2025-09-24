@@ -5,7 +5,6 @@
 
 import os
 import torch
-import wandb
 import json
 from typing import Dict, Any, Optional
 from transformers import TrainingArguments, Trainer, DataCollatorForSeq2Seq
@@ -143,12 +142,6 @@ class FoodVLMTrainer:
         """开始训练"""
         print("Starting training...")
         
-        # if self.config['system']['use_wandb']:
-        #     wandb.init(
-        #         project=self.config['system']['wandb_project'],
-        #         name=f"{self.config['model_key']}_{self.config['run_name']}",
-        #         config=self.config
-        #     )
         
         try:
             # 开始训练
@@ -164,9 +157,6 @@ class FoodVLMTrainer:
             print(f"Training failed: {e}")
             raise
         
-        # finally:
-        #     if self.config['system']['use_wandb']:
-        #         wandb.finish()
     
     def evaluate(self):
         """评估模型"""

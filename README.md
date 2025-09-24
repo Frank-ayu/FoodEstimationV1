@@ -253,7 +253,6 @@ config = {
 ## 训练监控
 
 训练过程会记录到：
-- **Wandb**: 在线训练监控（需要注册wandb账号）
 - **本地日志**: `./checkpoints/food_vlm_lora/logs/`
 
 ## 故障排除
