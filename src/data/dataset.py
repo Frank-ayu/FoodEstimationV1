@@ -437,8 +437,8 @@ def main():
     
     # 测试不同模型的数据加载
     models_to_test = [
-        ("liuhaotian/llava-v1.5-7b", "llava"),
-        ("Qwen/Qwen-VL-7B", "qwen_vl")
+        ("llava-hf/llava-1.5-7b-hf", "llava"),
+        # ("Qwen/Qwen-VL-7B", "qwen_vl")
     ]
     
     for model_id, model_type in models_to_test:
@@ -451,8 +451,8 @@ def main():
             
             # 创建数据加载器
             train_loader, val_loader, test_loader = FoodDataLoader.create_data_loaders(
-                data_path="cal_meta.json",
-                image_dir="cal_data",
+                data_path="cal_meta_split.json",
+                image_dir="/root/autodl-tmp/data/cal_data",
                 tokenizer=tokenizer,
                 processor=processor,
                 batch_size=2,
