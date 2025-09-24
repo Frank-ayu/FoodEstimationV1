@@ -65,8 +65,7 @@ class FoodVLMTrainer:
             batch_size=training_config['batch_size'],
             max_length=training_config['max_length'],
             num_workers=data_config['num_workers'],
-            model_type=model_info['model_type'],
-            qa_mode=training_config.get('qa_mode', True)
+            model_type=model_info['model_type']
         )
         
         print(f"Train samples: {len(self.train_loader.dataset)}")

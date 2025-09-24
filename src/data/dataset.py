@@ -24,8 +24,7 @@ class FoodDataset(Dataset):
         processor, 
         max_length: int = 512, 
         split: str = "train",
-        model_type: str = "llava",
-        qa_mode: bool = True
+        model_type: str = "llava"
     ):
         self.data_path = data_path
         self.image_dir = image_dir
@@ -34,7 +33,6 @@ class FoodDataset(Dataset):
         self.max_length = max_length
         self.split = split
         self.model_type = model_type
-        self.qa_mode = qa_mode
         
         # 加载数据
         with open(data_path, 'r', encoding='utf-8') as f:
@@ -46,7 +44,7 @@ class FoodDataset(Dataset):
         # 创建训练样本
         self.samples = self._create_samples()
         
-        print(f"Loaded {len(self.samples)} samples for {split} split using {model_type} model (QA mode: {qa_mode})")
+        print(f"Loaded {len(self.samples)} samples for {split} split using {model_type} model")
     
     def _filter_data(self) -> List[Dict]:
         """过滤有效数据"""
@@ -60,7 +58,7 @@ class FoodDataset(Dataset):
                 
                 # 检查图片是否存在
                 valid_images = []
-                for img_path in item['image_paths']:
+                for img_path in item['image_paths'][-4:]:
                     full_path = os.path.join(self.image_dir, img_path)
                     if os.path.exists(full_path):
                         valid_images.append(img_path)
@@ -72,36 +70,21 @@ class FoodDataset(Dataset):
         return filtered
     
     def _create_samples(self) -> List[Dict]:
-        """创建训练样本"""
+        """创建训练样本 - 统一QA模式"""
         samples = []
         
         for key, item in self.filtered_data:
             # 随机选择一张图片
             img_path = random.choice(item['valid_image_paths'])
             full_img_path = os.path.join(self.image_dir, img_path)
-            
-            if self.qa_mode:
-                # QA模式：创建多个问答对
-                qa_pairs = self._create_qa_pairs(item)
-                for question, answer in qa_pairs:
-                    samples.append({
-                        'image_path': full_img_path,
-                        'question': question,
-                        'answer': answer,
-                        'metadata': {
-                            'id': key,
-                            'title': item.get('title', ''),
-                            'ingredients': item.get('ingredients', []),
-                            'nutrition': item.get('nutr_per_ingredient', []),
-                            'fsa_lights': item.get('fsa_lights_per100g', {})
-                        }
-                    })
-            else:
-                # 传统模式：构建完整描述
-                text = self._build_text_description(item)
+
+            # QA模式：创建多个问答对
+            qa_pairs = self._create_qa_pairs(item)
+            for question, answer in qa_pairs:
                 samples.append({
                     'image_path': full_img_path,
-                    'text': text,
+                    'question': question,
+                    'answer': answer,
                     'metadata': {
                         'id': key,
                         'title': item.get('title', ''),
@@ -120,6 +103,8 @@ class FoodDataset(Dataset):
         ingredients = [ing['text'] for ing in item.get('ingredients', [])]
         nutrition = item.get('nutr_per_ingredient', [])
         fsa_lights = item.get('fsa_lights_per100g', {})
+        quantities = [q['text'] for q in item.get('quantity', [])]
+        units = [u['text'] for u in item.get('unit', [])]
         
         # 计算总营养
         total_nutrition = self._calculate_total_nutrition(nutrition)
@@ -148,14 +133,22 @@ class FoodDataset(Dataset):
             )
         ])
         
-        # 食材相关问答
+        # 食材+数量+单位问答
+        if ingredients and quantities and units:
+            ingredient_with_amounts = []
+            for ing, q, u in zip(ingredients, quantities, units):
+                ingredient_with_amounts.append(f"{ing} → {q} {u}")
+            ingredients_text = "; ".join(ingredient_with_amounts)
+            
+            qa_pairs.append((
+                "What ingredients and quantities are required for this recipe?",
+                f"The recipe requires the following ingredients with quantities: {ingredients_text}."
+            ))
+
+        # 仅食材相关问答
         if ingredients:
             ingredients_text = ", ".join(ingredients[:5])  # 限制长度
             qa_pairs.extend([
-                (
-                    "What ingredients and quantities are required for this recipe?",
-                    f"The main ingredients include: {ingredients_text}. For exact quantities, please refer to the recipe instructions."
-                ),
                 (
                     "What are the main ingredients in this dish?",
                     f"The main ingredients are: {ingredients_text}."
@@ -192,19 +185,15 @@ class FoodDataset(Dataset):
             (
                 "Can you describe this food?",
                 f"This is '{title}', a dish that appears to be prepared with various ingredients and has specific nutritional characteristics."
-            ),
-            (
-                "What can you tell me about this food?",
-                f"This is '{title}'. Based on the ingredients and nutritional information, it contains {total_nutrition['energy']:.1f} calories per 100g with {total_nutrition['protein']:.1f}g protein and {total_nutrition['fat']:.1f}g fat."
             )
         ])
         
         # 随机选择部分问答对，避免数据过多
-        if len(qa_pairs) > 8:
-            qa_pairs = random.sample(qa_pairs, 8)
+        if len(qa_pairs) > 10:
+            qa_pairs = random.sample(qa_pairs, 10)
         
         return qa_pairs
-    
+
     def _calculate_total_nutrition(self, nutrition: List[Dict]) -> Dict[str, float]:
         """计算总营养"""
         total_nutrition = {
@@ -316,67 +305,40 @@ Traffic Light Colors (per 100g):
             image = Image.open(sample['image_path']).convert('RGB')
         except Exception as e:
             print(f"Error loading image {sample['image_path']}: {e}")
-            # 返回一个空白图片
             image = Image.new('RGB', (224, 224), color='white')
         
-        if self.qa_mode:
-            # QA模式：构建问答格式
-            question = sample['question']
-            answer = sample['answer']
-            
-            # 构建完整的对话格式
-            if self.model_type == "qwen_vl":
-                # Qwen-VL格式
-                conversation = f"<image>\nHuman: {question}\nAssistant: {answer}"
-            else:
-                # LLaVA格式
-                conversation = f"<image>\nUSER: {question}\nASSISTANT: {answer}"
-            
-            # 处理图片和文本
-            inputs = self.processor(
-                text=conversation,
-                images=image,
-                return_tensors="pt",
-                padding=True,
-                truncation=True,
-                max_length=self.max_length
-            )
-            
-            # 移除batch维度
-            for key in inputs:
-                if isinstance(inputs[key], torch.Tensor):
-                    inputs[key] = inputs[key].squeeze(0)
-            
-            return {
-                'input_ids': inputs['input_ids'],
-                'attention_mask': inputs['attention_mask'],
-                'pixel_values': inputs['pixel_values'],
-                'question': question,
-                'answer': answer,
-                'metadata': sample['metadata']
-            }
+        # 构建问答格式（统一QA模式）
+        question = sample['question']
+        answer = sample['answer']
+        
+        if self.model_type == "qwen_vl":
+            conversation = f"<image>\nHuman: {question}\nAssistant: {answer}"
         else:
-            # 传统模式
-            inputs = self.processor(
-                text=sample['text'],
-                images=image,
-                return_tensors="pt",
-                padding=True,
-                truncation=True,
-                max_length=self.max_length
-            )
-            
-            # 移除batch维度
-            for key in inputs:
-                if isinstance(inputs[key], torch.Tensor):
-                    inputs[key] = inputs[key].squeeze(0)
-            
-            return {
-                'input_ids': inputs['input_ids'],
-                'attention_mask': inputs['attention_mask'],
-                'pixel_values': inputs['pixel_values'],
-                'metadata': sample['metadata']
-            }
+            conversation = f"<image>\nUSER: {question}\nASSISTANT: {answer}"
+        
+        # 处理图片和文本
+        inputs = self.processor(
+            text=conversation,
+            images=image,
+            return_tensors="pt",
+            padding=True,
+            truncation=True,
+            max_length=self.max_length
+        )
+        
+        for key in inputs:
+            if isinstance(inputs[key], torch.Tensor):
+                inputs[key] = inputs[key].squeeze(0)
+        
+        return {
+            'input_ids': inputs['input_ids'],
+            'attention_mask': inputs['attention_mask'],
+            'pixel_values': inputs['pixel_values'],
+            'question': question,
+            'answer': answer,
+            'metadata': sample['metadata']
+        }
+
 
 class FoodDataLoader:
     """食物数据加载器工厂"""
@@ -391,7 +353,6 @@ class FoodDataLoader:
         max_length: int = 512, 
         num_workers: int = 4,
         model_type: str = "llava",
-        qa_mode: bool = True
     ) -> tuple:
         """创建数据加载器"""
         
@@ -404,7 +365,6 @@ class FoodDataLoader:
             max_length=max_length,
             split="train",
             model_type=model_type,
-            qa_mode=qa_mode
         )
         
         # 创建验证集
@@ -416,7 +376,6 @@ class FoodDataLoader:
             max_length=max_length,
             split="val",
             model_type=model_type,
-            qa_mode=qa_mode
         )
         
         # 创建测试集
@@ -428,7 +387,6 @@ class FoodDataLoader:
             max_length=max_length,
             split="test",
             model_type=model_type,
-            qa_mode=qa_mode
         )
         
         # 创建数据加载器

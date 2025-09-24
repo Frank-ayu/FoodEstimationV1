@@ -126,7 +126,6 @@ training_templates:
     weight_decay: 0.01
     max_length: 512
     fp16: true
-    qa_mode: true
     description: "适合资源受限环境的轻量级训练"
     
   # 标准训练配置
@@ -142,7 +141,6 @@ training_templates:
     weight_decay: 0.01
     max_length: 1024
     fp16: true
-    qa_mode: true
     description: "平衡性能和资源的标准训练"
     
   # 高性能训练配置
@@ -158,7 +156,6 @@ training_templates:
     weight_decay: 0.005
     max_length: 2048
     fp16: true
-    qa_mode: true
     description: "追求最佳性能的高配置训练"
 
 # 数据配置
