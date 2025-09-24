@@ -38,6 +38,16 @@ class FoodVLMInference:
         print(f"Loading {model_info['name']} ({self.model_key})...")
         print(f"Model ID: {model_info['model_id']}")
         
+        # 检查模型可用性
+        available, availability_message = self.model_factory.check_model_availability(self.model_key)
+        print(f"Model availability: {available}")
+        print(f"Message: {availability_message}")
+        
+        if not available:
+            print("Model not available. Download instructions:")
+            print(self.model_factory.get_download_instructions(self.model_key))
+            raise FileNotFoundError(f"Model {self.model_key} not available locally")
+        
         # 创建模型
         self.model, self.tokenizer, self.processor = self.model_factory.create_model(
             model_key=self.model_key,

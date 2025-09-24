@@ -255,6 +255,16 @@ def main():
         print("System requirements not met. Please check your hardware.")
         return
     
+    # 检查模型可用性
+    available, availability_message = factory.check_model_availability(args.model)
+    print(f"Model availability: {available}")
+    print(f"Message: {availability_message}")
+    
+    if not available:
+        print("Model not available. Download instructions:")
+        print(factory.get_download_instructions(args.model))
+        return
+    
     # 创建训练器
     trainer = FoodVLMTrainer(config)
     

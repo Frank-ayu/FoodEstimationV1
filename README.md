@@ -75,7 +75,27 @@ pip install -r requirements.txt
 python scripts/setup.py
 ```
 
-### 2. 数据准备
+### 2. 下载模型
+
+**重要**: 本项目现在使用本地模型，需要先下载模型文件。
+
+```bash
+# 查看所有可用模型
+python scripts/download_models.py --list
+
+# 下载LLaVA-7B模型（推荐入门）
+python scripts/download_models.py --model llava_7b
+
+# 下载Qwen-VL-7B模型（中文支持好）
+python scripts/download_models.py --model qwen_vl_7b
+
+# 下载所有模型
+python scripts/download_models.py --all
+```
+
+详细下载指南请参考 [MODEL_DOWNLOAD_GUIDE.md](MODEL_DOWNLOAD_GUIDE.md)
+
+### 3. 数据准备
 
 确保你的数据结构如下：
 ```
@@ -87,7 +107,7 @@ FoodEstimation/
 │   └── ...
 ```
 
-### 3. 训练模型
+### 4. 训练模型
 
 ```bash
 # 使用LLaVA-7B模型训练
@@ -100,7 +120,7 @@ python scripts/train.py --model qwen_vl_7b --template lightweight
 python scripts/train.py --model llava_13b --template high_performance --batch_size 1 --epochs 5
 ```
 
-### 4. 推理测试
+### 5. 推理测试
 
 ```bash
 # 单张图片分析（使用默认问题）
@@ -128,7 +148,7 @@ python scripts/inference.py \
 python scripts/interactive_inference.py --model llava_7b --lora_path ./checkpoints/llava_7b_v1/lora_weights
 ```
 
-### 5. 一键启动
+### 6. 一键启动
 
 ```bash
 # 完整流程（设置+训练+推理）

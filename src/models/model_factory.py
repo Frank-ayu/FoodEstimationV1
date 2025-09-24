@@ -33,6 +33,47 @@ class VLMModelFactory:
         """获取所有可用模型"""
         return self.model_configs['models']
     
+    def check_model_availability(self, model_key: str) -> Tuple[bool, str]:
+        """检查模型是否可用（已下载）"""
+        model_info = self.get_model_info(model_key)
+        model_id = model_info['model_id']
+        
+        if model_id.startswith('./models/'):
+            model_path = os.path.abspath(model_id)
+            if os.path.exists(model_path):
+                return True, f"Model available at: {model_path}"
+            else:
+                return False, f"Model not found at: {model_path}"
+        else:
+            # 远程模型，假设可用（需要网络连接）
+            return True, f"Remote model: {model_id}"
+    
+    def get_download_instructions(self, model_key: str) -> str:
+        """获取模型下载说明"""
+        model_info = self.get_model_info(model_key)
+        model_id = model_info['model_id']
+        
+        if model_id.startswith('./models/'):
+            model_path = os.path.abspath(model_id)
+            return f"""
+To download {model_info['name']} ({model_key}):
+
+1. Create the models directory if it doesn't exist:
+   mkdir -p models
+
+2. Download the model using git-lfs:
+   cd models
+   git lfs install
+   git clone https://huggingface.co/liuhaotian/llava-v1.5-7b llava-v1.5-7b
+
+3. Or download manually from Hugging Face:
+   https://huggingface.co/liuhaotian/llava-v1.5-7b
+
+4. Ensure the model is saved to: {model_path}
+"""
+        else:
+            return f"Model {model_key} uses remote path: {model_id}"
+    
     def get_model_info(self, model_key: str) -> Dict[str, Any]:
         """获取模型信息"""
         if model_key not in self.model_configs['models']:
@@ -66,6 +107,18 @@ class VLMModelFactory:
         print(f"Loading {model_info['name']} ({model_key})...")
         print(f"Model ID: {model_info['model_id']}")
         print(f"Size: {model_info['size_gb']}GB")
+        
+        # 检查本地模型路径是否存在
+        model_id = model_info['model_id']
+        if model_id.startswith('./models/'):
+            model_path = os.path.abspath(model_id)
+            if not os.path.exists(model_path):
+                raise FileNotFoundError(
+                    f"Local model not found at: {model_path}\n"
+                    f"Please download the model to the models directory first.\n"
+                    f"For {model_key}, you need to download the model to: {model_path}"
+                )
+            print(f"Using local model from: {model_path}")
         
         # 根据模型类型加载不同的模型
         if model_type == "llava":

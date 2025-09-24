@@ -18,7 +18,7 @@ models:
     
   llava_13b:
     name: "LLaVA-1.5-13B"
-    model_id: "liuhaotian/llava-v1.5-13b"
+    model_id: "./models/llava-v1.5-13b"
     model_type: "llava"
     base_model: "llama"
     vision_encoder: "clip"
@@ -31,7 +31,7 @@ models:
     
   llava_34b:
     name: "LLaVA-1.5-34B"
-    model_id: "liuhaotian/llava-v1.5-34b"
+    model_id: "./models/llava-v1.5-34b"
     model_type: "llava"
     base_model: "llama"
     vision_encoder: "clip"
@@ -45,7 +45,7 @@ models:
   # Qwen-VL系列
   qwen_vl_7b:
     name: "Qwen-VL-7B"
-    model_id: "Qwen/Qwen-VL-7B"
+    model_id: "./models/Qwen-VL-7B"
     model_type: "qwen_vl"
     base_model: "qwen"
     vision_encoder: "clip"
@@ -58,7 +58,7 @@ models:
     
   qwen_vl_14b:
     name: "Qwen-VL-14B"
-    model_id: "Qwen/Qwen-VL-14B"
+    model_id: "./models/Qwen-VL-14B"
     model_type: "qwen_vl"
     base_model: "qwen"
     vision_encoder: "clip"
@@ -72,7 +72,7 @@ models:
   # MiniCPM-V系列
   minicpm_v_2b:
     name: "MiniCPM-V-2B"
-    model_id: "openbmb/MiniCPM-V-2_3"
+    model_id: "./models/MiniCPM-V-2_3"
     model_type: "minicpm_v"
     base_model: "minicpm"
     vision_encoder: "clip"
@@ -86,7 +86,7 @@ models:
   # InternVL系列
   internvl_7b:
     name: "InternVL-7B"
-    model_id: "OpenGVLab/InternVL-7B"
+    model_id: "./models/InternVL-7B"
     model_type: "internvl"
     base_model: "internlm"
     vision_encoder: "internvl"
@@ -100,7 +100,7 @@ models:
   # BLIP-2系列
   blip2_7b:
     name: "BLIP-2-7B"
-    model_id: "Salesforce/blip2-opt-6.7b"
+    model_id: "./models/blip2-opt-6.7b"
     model_type: "blip2"
     base_model: "opt"
     vision_encoder: "clip"
