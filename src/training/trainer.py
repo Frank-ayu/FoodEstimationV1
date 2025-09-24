@@ -164,9 +164,9 @@ class FoodVLMTrainer:
             print(f"Training failed: {e}")
             raise
         
-        finally:
-            if self.config['system']['use_wandb']:
-                wandb.finish()
+        # finally:
+        #     if self.config['system']['use_wandb']:
+        #         wandb.finish()
     
     def evaluate(self):
         """评估模型"""
