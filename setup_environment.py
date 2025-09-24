@@ -28,20 +28,20 @@ def install_requirements():
     print("Installing Python packages...")
     return run_command("pip install -r requirements.txt", "Installing requirements")
 
-def download_model(model_name, local_dir):
-    """下载模型"""
-    print(f"Downloading model: {model_name}")
-    try:
-        snapshot_download(
-            repo_id=model_name,
-            local_dir=local_dir,
-            local_dir_use_symlinks=False
-        )
-        print(f"✓ Model downloaded to {local_dir}")
-        return True
-    except Exception as e:
-        print(f"✗ Model download failed: {e}")
-        return False
+# def download_model(model_name, local_dir):
+#     """下载模型"""
+#     print(f"Downloading model: {model_name}")
+#     try:
+#         snapshot_download(
+#             repo_id=model_name,
+#             local_dir=local_dir,
+#             local_dir_use_symlinks=False
+#         )
+#         print(f"✓ Model downloaded to {local_dir}")
+#         return True
+#     except Exception as e:
+#         print(f"✗ Model download failed: {e}")
+#         return False
 
 def setup_directories():
     """创建必要的目录"""
@@ -145,9 +145,9 @@ def main():
     print("="*60)
     
     # 1. 安装依赖
-    if not install_requirements():
-        print("Failed to install requirements. Please check your Python environment.")
-        return False
+    # if not install_requirements():
+    #     print("Failed to install requirements. Please check your Python environment.")
+    #     return False
     
     # 2. 创建目录
     setup_directories()
@@ -163,28 +163,28 @@ def main():
     create_config_file()
     
     # 5. 下载模型（可选）
-    print("\n" + "="*60)
-    print("Model Download Options:")
-    print("="*60)
-    print("1. Download LLaVA-1.5-7B (recommended, ~13GB)")
-    print("2. Download LLaVA-1.5-13B (larger, better performance, ~26GB)")
-    print("3. Skip download (use online model)")
+    # print("\n" + "="*60)
+    # print("Model Download Options:")
+    # print("="*60)
+    # print("1. Download LLaVA-1.5-7B (recommended, ~13GB)")
+    # print("2. Download LLaVA-1.5-13B (larger, better performance, ~26GB)")
+    # print("3. Skip download (use online model)")
     
-    choice = input("\nEnter your choice (1/2/3): ").strip()
+    # choice = input("\nEnter your choice (1/2/3): ").strip()
     
-    if choice == "1":
-        download_model("liuhaotian/llava-v1.5-7b", "./models/llava-v1.5-7b")
-    elif choice == "2":
-        download_model("liuhaotian/llava-v1.5-13b", "./models/llava-v1.5-13b")
-        # 更新配置文件
-        with open("config.json", 'r') as f:
-            config = json.load(f)
-        config["model"]["base_model"] = "liuhaotian/llava-v1.5-13b"
-        config["model"]["local_model_path"] = "./models/llava-v1.5-13b"
-        with open("config.json", 'w') as f:
-            json.dump(config, f, indent=2)
-    else:
-        print("Skipping model download. Will use online model during training.")
+    # if choice == "1":
+    #     download_model("liuhaotian/llava-v1.5-7b", "./models/llava-v1.5-7b")
+    # elif choice == "2":
+    #     download_model("liuhaotian/llava-v1.5-13b", "./models/llava-v1.5-13b")
+    #     # 更新配置文件
+    #     with open("config.json", 'r') as f:
+    #         config = json.load(f)
+    #     config["model"]["base_model"] = "liuhaotian/llava-v1.5-13b"
+    #     config["model"]["local_model_path"] = "./models/llava-v1.5-13b"
+    #     with open("config.json", 'w') as f:
+    #         json.dump(config, f, indent=2)
+    # else:
+    #     print("Skipping model download. Will use online model during training.")
     
     print("\n" + "="*60)
     print("Setup completed successfully!")
