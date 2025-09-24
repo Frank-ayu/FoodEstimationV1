@@ -106,7 +106,7 @@ class FoodVLMTrainer:
             load_best_model_at_end=True,
             metric_for_best_model="eval_loss",
             greater_is_better=False,
-            report_to="wandb" if system_config['use_wandb'] else None,
+            report_to=None,
             run_name=f"{self.config['model_key']}_{self.config['run_name']}",
             fp16=training_config['fp16'] and self.device.type == "cuda",
             dataloader_num_workers=self.config['data']['num_workers'],
