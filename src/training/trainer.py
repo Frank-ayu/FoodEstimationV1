@@ -247,6 +247,9 @@ def main():
     
     # 检查系统要求
 
+    print(f"Model key: {args.model}")
+    print(f"Available models: {list(factory.get_available_models().keys())}")
+
     print(f"args loaded {args}")
     factory = VLMModelFactory()
     compatible, message = factory.check_system_requirements(args.model)
