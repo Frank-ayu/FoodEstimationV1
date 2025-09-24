@@ -143,12 +143,12 @@ class FoodVLMTrainer:
         """开始训练"""
         print("Starting training...")
         
-        if self.config['system']['use_wandb']:
-            wandb.init(
-                project=self.config['system']['wandb_project'],
-                name=f"{self.config['model_key']}_{self.config['run_name']}",
-                config=self.config
-            )
+        # if self.config['system']['use_wandb']:
+        #     wandb.init(
+        #         project=self.config['system']['wandb_project'],
+        #         name=f"{self.config['model_key']}_{self.config['run_name']}",
+        #         config=self.config
+        #     )
         
         try:
             # 开始训练
