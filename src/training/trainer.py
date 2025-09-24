@@ -246,6 +246,8 @@ def main():
             config['training']['learning_rate'] = args.learning_rate
     
     # 检查系统要求
+
+    print(f"args loaded {args}")
     factory = VLMModelFactory()
     compatible, message = factory.check_system_requirements(args.model)
     print(f"System compatibility: {compatible}")
