@@ -60,6 +60,7 @@ class FoodDataset(Dataset):
                 item.get('nutr_per_ingredient') and
                 item.get('partition') == self.split):
                 
+                print(f"debug item: {item}")
                 # 检查图片是否存在
                 valid_images = []
                 for img_path in item['image_paths'][-4:]:

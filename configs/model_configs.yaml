@@ -161,7 +161,7 @@ training_templates:
 # 数据配置
 data_config:
   data_path: "/root/autodl-tmp/code/FoodEstimationV1/cal_meta_split.json"
-  image_dir: "/root/autodl-tmp/data/cal_data"
+  image_dir: "/root/autodl-tmp/data/"
   num_workers: 4
   train_split: "train"
   val_split: "val"
