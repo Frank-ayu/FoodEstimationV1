@@ -138,9 +138,38 @@ To download {model_info['name']} ({model_key}):
         """加载LLaVA模型"""
         model_id = model_info['model_id']
         
+        # 检查是否为本地路径，如果是则强制使用本地文件
+        use_local_only = model_id.startswith('./models/')
+        
         # 加载tokenizer和processor
-        tokenizer = AutoTokenizer.from_pretrained(model_id)
-        processor = AutoProcessor.from_pretrained(model_id)
+        try:
+            tokenizer = AutoTokenizer.from_pretrained(
+                model_id, 
+                local_files_only=use_local_only
+            )
+            processor = AutoProcessor.from_pretrained(
+                model_id, 
+                local_files_only=use_local_only
+            )
+        except OSError as e:
+            if "does not appear to have a file named" in str(e):
+                print(f"❌ Model files incomplete: {e}")
+                print(f"📁 Model path: {os.path.abspath(model_id)}")
+                print("\n🔧 To fix this issue:")
+                print("1. Re-download the model with:")
+                print(f"   python scripts/download_models.py --model llava_7b --force")
+                print("2. Or manually download from Hugging Face:")
+                print(f"   https://huggingface.co/liuhaotian/llava-v1.5-7b")
+                print("3. Ensure all files are downloaded, including:")
+                print("   - config.json")
+                print("   - preprocessor_config.json") 
+                print("   - tokenizer.json")
+                print("   - tokenizer_config.json")
+                print("   - special_tokens_map.json")
+                print("   - pytorch_model.bin or model.safetensors")
+                raise FileNotFoundError(f"Model files incomplete. Please re-download the model.")
+            else:
+                raise
         
         # 设置pad token
         if tokenizer.pad_token is None:
@@ -151,7 +180,8 @@ To download {model_info['name']} ({model_key}):
             model_id,
             torch_dtype=torch.float16 if self.device.type == "cuda" else torch.float32,
             device_map="auto" if self.device.type == "cuda" else None,
-            low_cpu_mem_usage=True
+            low_cpu_mem_usage=True,
+            local_files_only=use_local_only
         )
         
         # 应用LoRA
@@ -181,9 +211,18 @@ To download {model_info['name']} ({model_key}):
         """加载Qwen-VL模型"""
         model_id = model_info['model_id']
         
+        # 检查是否为本地路径，如果是则强制使用本地文件
+        use_local_only = model_id.startswith('./models/')
+        
         # 加载tokenizer和processor
-        tokenizer = AutoTokenizer.from_pretrained(model_id)
-        processor = AutoProcessor.from_pretrained(model_id)
+        tokenizer = AutoTokenizer.from_pretrained(
+            model_id, 
+            local_files_only=use_local_only
+        )
+        processor = AutoProcessor.from_pretrained(
+            model_id, 
+            local_files_only=use_local_only
+        )
         
         # 设置pad token
         if tokenizer.pad_token is None:
@@ -194,7 +233,8 @@ To download {model_info['name']} ({model_key}):
             model_id,
             torch_dtype=torch.float16 if self.device.type == "cuda" else torch.float32,
             device_map="auto" if self.device.type == "cuda" else None,
-            low_cpu_mem_usage=True
+            low_cpu_mem_usage=True,
+            local_files_only=use_local_only
         )
         
         # 应用LoRA
@@ -224,9 +264,18 @@ To download {model_info['name']} ({model_key}):
         """加载BLIP-2模型"""
         model_id = model_info['model_id']
         
+        # 检查是否为本地路径，如果是则强制使用本地文件
+        use_local_only = model_id.startswith('./models/')
+        
         # 加载tokenizer和processor
-        tokenizer = AutoTokenizer.from_pretrained(model_id)
-        processor = AutoProcessor.from_pretrained(model_id)
+        tokenizer = AutoTokenizer.from_pretrained(
+            model_id, 
+            local_files_only=use_local_only
+        )
+        processor = AutoProcessor.from_pretrained(
+            model_id, 
+            local_files_only=use_local_only
+        )
         
         # 设置pad token
         if tokenizer.pad_token is None:
@@ -237,7 +286,8 @@ To download {model_info['name']} ({model_key}):
             model_id,
             torch_dtype=torch.float16 if self.device.type == "cuda" else torch.float32,
             device_map="auto" if self.device.type == "cuda" else None,
-            low_cpu_mem_usage=True
+            low_cpu_mem_usage=True,
+            local_files_only=use_local_only
         )
         
         # 应用LoRA
