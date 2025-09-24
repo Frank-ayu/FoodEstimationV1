@@ -40,6 +40,8 @@ class FoodDataset(Dataset):
         
         # 过滤数据
         self.filtered_data = self._filter_data()
+
+        print(f"Filtered data: {self.filtered_data}")
         
         # 创建训练样本
         self.samples = self._create_samples()
