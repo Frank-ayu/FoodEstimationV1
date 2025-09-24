@@ -64,6 +64,7 @@ class FoodDataset(Dataset):
                 valid_images = []
                 for img_path in item['image_paths'][-4:]:
                     full_path = os.path.join(self.image_dir, img_path)
+                    print(f"debug Full path: {full_path}")
                     if os.path.exists(full_path):
                         valid_images.append(img_path)
                 
