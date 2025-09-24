@@ -39,6 +39,8 @@ class FoodDataset(Dataset):
             self.data = json.load(f)
         
         # 过滤数据
+        print(f"start filter data")
+
         self.filtered_data = self._filter_data()
 
         print(f"Filtered data: {self.filtered_data}")
