@@ -1,0 +1,169 @@
+# 问答提示词模板
+# 用于训练和推理的问答对模板
+
+# 营养相关问题
+nutrition_questions:
+  calories:
+    - "How much does this food have, in terms of KCal?"
+    - "What is the calorie content of this dish?"
+    - "How many calories are in this food?"
+    - "What's the energy content of this meal?"
+  
+  protein:
+    - "What is the protein content of this dish?"
+    - "How much protein does this food contain?"
+    - "What's the protein level in this meal?"
+  
+  fat:
+    - "How much fat is in this food?"
+    - "What is the fat content of this dish?"
+    - "How much fat does this contain?"
+  
+  sodium:
+    - "What is the sodium content?"
+    - "How much salt is in this food?"
+    - "What's the sodium level in this dish?"
+  
+  sugar:
+    - "How much sugar does this contain?"
+    - "What is the sugar content of this food?"
+    - "How much sugar is in this dish?"
+
+# 食材相关问题
+ingredient_questions:
+  main_ingredients:
+    - "What ingredients and quantities are required for this recipe?"
+    - "What are the main ingredients in this dish?"
+    - "What ingredients are used in this food?"
+    - "What's in this dish?"
+  
+  ingredient_types:
+    - "What type of ingredients are used?"
+    - "What categories of ingredients are in this dish?"
+    - "What kinds of ingredients does this contain?"
+  
+  quantities:
+    - "What are the quantities of each ingredient?"
+    - "How much of each ingredient is needed?"
+    - "What are the proportions of ingredients?"
+
+# 健康指标问题
+health_questions:
+  fat_health:
+    - "Is this food healthy in terms of fat content?"
+    - "How healthy is the fat content?"
+    - "Is the fat level good or bad?"
+  
+  salt_health:
+    - "How much salt is in this food?"
+    - "Is the salt content healthy?"
+    - "Is this too salty?"
+  
+  overall_health:
+    - "What about saturated fat and sugar levels?"
+    - "Is this a healthy food overall?"
+    - "What are the health indicators for this food?"
+
+# 通用问题
+general_questions:
+  identification:
+    - "What is this dish called?"
+    - "What food is this?"
+    - "Can you identify this dish?"
+  
+  description:
+    - "Can you describe this food?"
+    - "What can you tell me about this food?"
+    - "How would you describe this dish?"
+  
+  cooking_method:
+    - "How is this food prepared?"
+    - "What cooking method was used?"
+    - "How was this dish made?"
+
+# 中文问题模板（用于Qwen-VL等中文模型）
+chinese_questions:
+  nutrition:
+    - "这道菜有多少卡路里？"
+    - "这道菜的蛋白质含量是多少？"
+    - "这道菜含有多少脂肪？"
+    - "这道菜的钠含量如何？"
+    - "这道菜含糖量高吗？"
+  
+  ingredients:
+    - "这道菜需要哪些食材和用量？"
+    - "这道菜的主要食材是什么？"
+    - "这道菜用了什么类型的食材？"
+  
+  health:
+    - "这道菜在脂肪含量方面健康吗？"
+    - "这道菜的盐分含量如何？"
+    - "这道菜整体健康吗？"
+  
+  general:
+    - "这道菜叫什么名字？"
+    - "你能描述一下这道菜吗？"
+    - "这道菜是怎么制作的？"
+
+# 问题分类
+question_categories:
+  nutrition: "营养相关问题"
+  ingredients: "食材相关问题"
+  health: "健康指标问题"
+  general: "通用问题"
+  cooking: "烹饪方法问题"
+
+# 答案模板
+answer_templates:
+  calories:
+    - "This food contains approximately {calories:.1f} calories (kcal) per 100g."
+    - "The calorie content is about {calories:.1f} kcal per 100g."
+    - "This dish has {calories:.1f} calories per 100g."
+  
+  protein:
+    - "This dish contains about {protein:.1f}g of protein per 100g."
+    - "The protein content is {protein:.1f}g per 100g."
+    - "This food has {protein:.1f}g protein per 100g."
+  
+  fat:
+    - "This food contains approximately {fat:.1f}g of fat per 100g."
+    - "The fat content is {fat:.1f}g per 100g."
+    - "This dish has {fat:.1f}g fat per 100g."
+  
+  sodium:
+    - "The sodium content is about {sodium:.1f}mg per 100g."
+    - "This food contains {sodium:.1f}mg sodium per 100g."
+    - "The salt content is {sodium:.1f}mg per 100g."
+  
+  sugar:
+    - "This contains approximately {sugar:.1f}g of sugar per 100g."
+    - "The sugar content is {sugar:.1f}g per 100g."
+    - "This food has {sugar:.1f}g sugar per 100g."
+  
+  ingredients:
+    - "The main ingredients include: {ingredients}."
+    - "This dish uses: {ingredients}."
+    - "The ingredients are: {ingredients}."
+  
+  health_rating:
+    - "The {nutrient} content is rated as {rating} (traffic light system)."
+    - "This food has a {rating} rating for {nutrient}."
+    - "The {nutrient} level is {rating}."
+
+# 使用示例
+usage_examples:
+  single_question:
+    - image: "path/to/food_image.jpg"
+      question: "How much does this food have, in terms of KCal?"
+      expected_answer: "This food contains approximately 250.5 calories (kcal) per 100g."
+  
+  multiple_questions:
+    - image: "path/to/food_image.jpg"
+      questions:
+        - "What are the main ingredients in this dish?"
+        - "How much protein does this contain?"
+        - "Is this food healthy in terms of fat content?"
+  
+  batch_analysis:
+    - images: ["image1.jpg", "image2.jpg", "image3.jpg"]
+      question: "What is the calorie content of each dish?"

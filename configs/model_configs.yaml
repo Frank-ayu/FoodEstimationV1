@@ -1,0 +1,187 @@
+# VLM模型配置文件
+# 支持多种VLM大模型的统一配置
+
+models:
+  # LLaVA系列
+  llava_7b:
+    name: "LLaVA-1.5-7B"
+    model_id: "liuhaotian/llava-v1.5-7b"
+    model_type: "llava"
+    base_model: "llama"
+    vision_encoder: "clip"
+    size_gb: 13
+    min_vram_gb: 16
+    recommended_vram_gb: 24
+    max_length: 2048
+    image_size: 336
+    description: "轻量级LLaVA模型，适合资源受限环境"
+    
+  llava_13b:
+    name: "LLaVA-1.5-13B"
+    model_id: "liuhaotian/llava-v1.5-13b"
+    model_type: "llava"
+    base_model: "llama"
+    vision_encoder: "clip"
+    size_gb: 26
+    min_vram_gb: 24
+    recommended_vram_gb: 32
+    max_length: 2048
+    image_size: 336
+    description: "高性能LLaVA模型，效果更好但需要更多资源"
+    
+  llava_34b:
+    name: "LLaVA-1.5-34B"
+    model_id: "liuhaotian/llava-v1.5-34b"
+    model_type: "llava"
+    base_model: "llama"
+    vision_encoder: "clip"
+    size_gb: 68
+    min_vram_gb: 48
+    recommended_vram_gb: 64
+    max_length: 2048
+    image_size: 336
+    description: "超大LLaVA模型，需要多GPU或高配置"
+    
+  # Qwen-VL系列
+  qwen_vl_7b:
+    name: "Qwen-VL-7B"
+    model_id: "Qwen/Qwen-VL-7B"
+    model_type: "qwen_vl"
+    base_model: "qwen"
+    vision_encoder: "clip"
+    size_gb: 14
+    min_vram_gb: 16
+    recommended_vram_gb: 24
+    max_length: 2048
+    image_size: 448
+    description: "阿里Qwen-VL模型，中文支持好"
+    
+  qwen_vl_14b:
+    name: "Qwen-VL-14B"
+    model_id: "Qwen/Qwen-VL-14B"
+    model_type: "qwen_vl"
+    base_model: "qwen"
+    vision_encoder: "clip"
+    size_gb: 28
+    min_vram_gb: 24
+    recommended_vram_gb: 32
+    max_length: 2048
+    image_size: 448
+    description: "大容量Qwen-VL模型"
+    
+  # MiniCPM-V系列
+  minicpm_v_2b:
+    name: "MiniCPM-V-2B"
+    model_id: "openbmb/MiniCPM-V-2_3"
+    model_type: "minicpm_v"
+    base_model: "minicpm"
+    vision_encoder: "clip"
+    size_gb: 4
+    min_vram_gb: 8
+    recommended_vram_gb: 12
+    max_length: 2048
+    image_size: 384
+    description: "轻量级VLM模型，资源需求低"
+    
+  # InternVL系列
+  internvl_7b:
+    name: "InternVL-7B"
+    model_id: "OpenGVLab/InternVL-7B"
+    model_type: "internvl"
+    base_model: "internlm"
+    vision_encoder: "internvl"
+    size_gb: 14
+    min_vram_gb: 16
+    recommended_vram_gb: 24
+    max_length: 2048
+    image_size: 448
+    description: "上海AI实验室的VLM模型"
+    
+  # BLIP-2系列
+  blip2_7b:
+    name: "BLIP-2-7B"
+    model_id: "Salesforce/blip2-opt-6.7b"
+    model_type: "blip2"
+    base_model: "opt"
+    vision_encoder: "clip"
+    size_gb: 13
+    min_vram_gb: 16
+    recommended_vram_gb: 24
+    max_length: 512
+    image_size: 224
+    description: "Salesforce的BLIP-2模型"
+
+# 训练配置模板
+training_templates:
+  # 轻量级训练配置
+  lightweight:
+    batch_size: 1
+    gradient_accumulation_steps: 8
+    learning_rate: 1e-4
+    num_epochs: 2
+    lora_r: 8
+    lora_alpha: 16
+    lora_dropout: 0.1
+    warmup_steps: 50
+    weight_decay: 0.01
+    max_length: 512
+    fp16: true
+    qa_mode: true
+    description: "适合资源受限环境的轻量级训练"
+    
+  # 标准训练配置
+  standard:
+    batch_size: 2
+    gradient_accumulation_steps: 4
+    learning_rate: 2e-4
+    num_epochs: 3
+    lora_r: 16
+    lora_alpha: 32
+    lora_dropout: 0.1
+    warmup_steps: 100
+    weight_decay: 0.01
+    max_length: 1024
+    fp16: true
+    qa_mode: true
+    description: "平衡性能和资源的标准训练"
+    
+  # 高性能训练配置
+  high_performance:
+    batch_size: 4
+    gradient_accumulation_steps: 2
+    learning_rate: 3e-4
+    num_epochs: 5
+    lora_r: 32
+    lora_alpha: 64
+    lora_dropout: 0.05
+    warmup_steps: 200
+    weight_decay: 0.005
+    max_length: 2048
+    fp16: true
+    qa_mode: true
+    description: "追求最佳性能的高配置训练"
+
+# 数据配置
+data_config:
+  data_path: "cal_meta.json"
+  image_dir: "cal_data"
+  num_workers: 4
+  train_split: "train"
+  val_split: "val"
+  test_split: "test"
+  
+# 输出配置
+output_config:
+  base_output_dir: "./checkpoints"
+  logs_dir: "./logs"
+  results_dir: "./results"
+  models_dir: "./models"
+  
+# 系统配置
+system_config:
+  use_wandb: true
+  wandb_project: "food-vlm-training"
+  logging_steps: 10
+  eval_steps: 100
+  save_steps: 200
+  save_total_limit: 3
