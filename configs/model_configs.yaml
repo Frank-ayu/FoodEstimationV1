@@ -157,6 +157,22 @@ training_templates:
     max_length: 2048
     fp16: true
     description: "追求最佳性能的高配置训练"
+    
+  # 快速验证配置 - 500样本测试
+  quick_test:
+    batch_size: 2
+    gradient_accumulation_steps: 4
+    learning_rate: 2e-4
+    num_epochs: 1
+    lora_r: 8
+    lora_alpha: 16
+    lora_dropout: 0.1
+    warmup_steps: 10
+    weight_decay: 0.01
+    max_length: 512
+    fp16: true
+    max_samples: 500
+    description: "快速验证配置，使用500个样本进行测试"
 
 # 数据配置
 data_config:

@@ -24,7 +24,8 @@ class FoodDataset(Dataset):
         processor, 
         max_length: int = 512, 
         split: str = "train",
-        model_type: str = "llava"
+        model_type: str = "llava",
+        max_samples: Optional[int] = None
     ):
         self.data_path = data_path
         self.image_dir = image_dir
@@ -33,6 +34,7 @@ class FoodDataset(Dataset):
         self.max_length = max_length
         self.split = split
         self.model_type = model_type
+        self.max_samples = max_samples
         
         # 加载数据
         with open(data_path, 'r', encoding='utf-8') as f:
@@ -42,6 +44,11 @@ class FoodDataset(Dataset):
         
         # 创建训练样本
         self.samples = self._create_samples()
+        
+        # 限制样本数量（用于快速测试）
+        if self.max_samples and len(self.samples) > self.max_samples:
+            self.samples = self.samples[:self.max_samples]
+            print(f"Limited to {self.max_samples} samples for quick testing")
         
         print(f"Loaded {len(self.samples)} samples for {split} split using {model_type} model")
     
@@ -373,6 +380,7 @@ Traffic Light Colors (per 100g):
         if self.model_type == "qwen_vl":
             conversation = f"<image>\nHuman: {question}\nAssistant: {answer}"
         else:
+            # 使用LLaVA标准格式
             conversation = f"<image>\nUSER: {question}\nASSISTANT: {answer}"
         
         # 处理图片和文本
@@ -389,12 +397,34 @@ Traffic Light Colors (per 100g):
             if isinstance(inputs[key], torch.Tensor):
                 inputs[key] = inputs[key].squeeze(0)
         
+        # 正确设置标签 - 只对回答部分计算损失
+        labels = self._create_labels(inputs['input_ids'], conversation, question)
+        
         return {
             'input_ids': inputs['input_ids'],
             'attention_mask': inputs['attention_mask'],
             'pixel_values': inputs['pixel_values'],
-            'labels': inputs['input_ids']  # 添加labels用于训练
+            'labels': labels
         }
+    
+    def _create_labels(self, input_ids, conversation, question):
+        """创建正确的标签，只对回答部分计算损失"""
+        labels = input_ids.clone()
+        
+        # 找到问题结束和回答开始的位置
+        conversation_tokens = self.tokenizer.encode(conversation, add_special_tokens=False)
+        question_tokens = self.tokenizer.encode(f"<image>\nUSER: {question}\nASSISTANT: ", add_special_tokens=False)
+        
+        # 将问题部分和特殊token设为-100（不计算损失）
+        if len(question_tokens) < len(input_ids):
+            labels[:len(question_tokens)] = -100
+        
+        # 确保pad token也被掩码
+        pad_token_id = self.tokenizer.pad_token_id
+        if pad_token_id is not None:
+            labels[labels == pad_token_id] = -100
+            
+        return labels
 
 
 class FoodDataLoader:
@@ -410,6 +440,7 @@ class FoodDataLoader:
         max_length: int = 512, 
         num_workers: int = 4,
         model_type: str = "llava",
+        max_samples: Optional[int] = None,
     ) -> tuple:
         """创建数据加载器"""
 
@@ -425,6 +456,7 @@ class FoodDataLoader:
             max_length=max_length,
             split="train",
             model_type=model_type,
+            max_samples=max_samples,
         )
         
         # 创建验证集
@@ -436,6 +468,7 @@ class FoodDataLoader:
             max_length=max_length,
             split="val",
             model_type=model_type,
+            max_samples=max_samples // 10 if max_samples else None,  # 验证集使用10%的样本
         )
         
         # 创建测试集
@@ -447,6 +480,7 @@ class FoodDataLoader:
             max_length=max_length,
             split="test",
             model_type=model_type,
+            max_samples=max_samples // 10 if max_samples else None,  # 测试集使用10%的样本
         )
         
         # 创建数据加载器
@@ -478,7 +512,7 @@ class FoodDataLoader:
     
     @staticmethod
     def collate_fn(batch):
-        """自定义批处理函数"""
+        """自定义批处理函数 - 专门为LLaVA优化"""
         input_ids = torch.stack([item['input_ids'] for item in batch])
         attention_mask = torch.stack([item['attention_mask'] for item in batch])
         pixel_values = torch.stack([item['pixel_values'] for item in batch])

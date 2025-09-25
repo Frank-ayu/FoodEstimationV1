@@ -6,6 +6,8 @@
 import os
 import torch
 import json
+import matplotlib.pyplot as plt
+import numpy as np
 from typing import Dict, Any, Optional
 from transformers import TrainingArguments, Trainer, DataCollatorForSeq2Seq
 from peft import PeftModel
@@ -15,6 +17,38 @@ from pathlib import Path
 from ..models.model_factory import VLMModelFactory
 from ..data.dataset import FoodDataLoader
 
+class CustomTrainer(Trainer):
+    """自定义训练器，用于记录训练历史"""
+    
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.training_history = {
+            'train_loss': [],
+            'eval_loss': [],
+            'learning_rate': [],
+            'epoch': [],
+            'step': []
+        }
+    
+    def log(self, logs):
+        """重写log方法，记录训练历史"""
+        super().log(logs)
+        
+        # 记录训练损失
+        if 'train_loss' in logs:
+            self.training_history['train_loss'].append(logs['train_loss'])
+            self.training_history['step'].append(logs.get('step', 0))
+            self.training_history['epoch'].append(logs.get('epoch', 0))
+            self.training_history['learning_rate'].append(logs.get('learning_rate', 0))
+        
+        # 记录验证损失
+        if 'eval_loss' in logs:
+            self.training_history['eval_loss'].append(logs['eval_loss'])
+    
+    def get_training_history(self):
+        """获取训练历史"""
+        return self.training_history
+
 class FoodVLMTrainer:
     """食物VLM模型训练器"""
     
@@ -22,6 +56,15 @@ class FoodVLMTrainer:
         self.config = config
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(f"Using device: {self.device}")
+        
+        # 初始化训练历史记录
+        self.training_history = {
+            'train_loss': [],
+            'eval_loss': [],
+            'learning_rate': [],
+            'epoch': [],
+            'step': []
+        }
         
         # 初始化模型工厂
         self.model_factory = VLMModelFactory()
@@ -68,7 +111,8 @@ class FoodVLMTrainer:
             batch_size=training_config['batch_size'],
             max_length=training_config['max_length'],
             num_workers=data_config['num_workers'],
-            model_type=model_info['model_type']
+            model_type=model_info['model_type'],
+            max_samples=training_config.get('max_samples', None)
         )
         
         print(f"Train samples: {len(self.train_loader.dataset)}")
@@ -115,16 +159,12 @@ class FoodVLMTrainer:
             lr_scheduler_type=training_config.get('lr_scheduler_type', 'cosine'),
         )
         
-        # 数据整理器
-        data_collator = DataCollatorForSeq2Seq(
-            tokenizer=self.tokenizer,
-            model=self.model,
-            padding=True,
-            return_tensors="pt"
-        )
+        # 数据整理器 - 使用自定义的LLaVA数据整理器
+        from ..data.dataset import FoodDataLoader
+        data_collator = FoodDataLoader.collate_fn
         
-        # 创建训练器
-        self.trainer = Trainer(
+        # 创建自定义训练器
+        self.trainer = CustomTrainer(
             model=self.model,
             args=training_args,
             train_dataset=self.train_loader.dataset,
@@ -150,6 +190,10 @@ class FoodVLMTrainer:
             # 保存最终模型
             self.trainer.save_model()
             self.tokenizer.save_pretrained(self.output_dir)
+            
+            # 绘制训练曲线
+            print("Generating training curves...")
+            self.plot_training_curves()
             
             print("Training completed successfully!")
             
@@ -181,6 +225,96 @@ class FoodVLMTrainer:
         
         self.model.save_pretrained(save_path)
         print(f"LoRA weights saved to {save_path}")
+        return save_path
+    
+    def plot_training_curves(self, save_path: Optional[str] = None):
+        """绘制训练曲线"""
+        if save_path is None:
+            save_path = os.path.join(self.output_dir, 'training_curves.png')
+        
+        # 获取训练历史
+        history = self.trainer.get_training_history()
+        
+        if not history['train_loss']:
+            print("No training history available for plotting")
+            return
+        
+        # 创建图表
+        fig, axes = plt.subplots(2, 2, figsize=(15, 10))
+        fig.suptitle('Training Progress', fontsize=16)
+        
+        # 1. 训练和验证损失
+        ax1 = axes[0, 0]
+        if history['train_loss']:
+            steps = history['step']
+            ax1.plot(steps, history['train_loss'], 'b-', label='Train Loss', linewidth=2)
+        if history['eval_loss']:
+            eval_steps = [steps[i] for i in range(0, len(steps), len(steps)//len(history['eval_loss']))][:len(history['eval_loss'])]
+            ax1.plot(eval_steps, history['eval_loss'], 'r-', label='Eval Loss', linewidth=2)
+        ax1.set_xlabel('Training Steps')
+        ax1.set_ylabel('Loss')
+        ax1.set_title('Training and Validation Loss')
+        ax1.legend()
+        ax1.grid(True, alpha=0.3)
+        
+        # 2. 学习率变化
+        ax2 = axes[0, 1]
+        if history['learning_rate']:
+            ax2.plot(history['step'], history['learning_rate'], 'g-', linewidth=2)
+        ax2.set_xlabel('Training Steps')
+        ax2.set_ylabel('Learning Rate')
+        ax2.set_title('Learning Rate Schedule')
+        ax2.grid(True, alpha=0.3)
+        
+        # 3. 按epoch的损失
+        ax3 = axes[1, 0]
+        if history['train_loss'] and history['epoch']:
+            # 计算每个epoch的平均损失
+            epochs = list(set(history['epoch']))
+            epoch_losses = []
+            for epoch in epochs:
+                epoch_indices = [i for i, e in enumerate(history['epoch']) if e == epoch]
+                if epoch_indices:
+                    epoch_loss = np.mean([history['train_loss'][i] for i in epoch_indices])
+                    epoch_losses.append(epoch_loss)
+            
+            ax3.plot(epochs, epoch_losses, 'b-o', linewidth=2, markersize=6)
+        ax3.set_xlabel('Epoch')
+        ax3.set_ylabel('Average Loss')
+        ax3.set_title('Loss per Epoch')
+        ax3.grid(True, alpha=0.3)
+        
+        # 4. 训练统计
+        ax4 = axes[1, 1]
+        ax4.axis('off')
+        
+        # 添加训练统计信息
+        stats_text = f"""
+Training Statistics:
+• Total Steps: {len(history['train_loss'])}
+• Total Epochs: {max(history['epoch']) if history['epoch'] else 0}
+• Final Train Loss: {history['train_loss'][-1]:.4f}
+• Final Eval Loss: {history['eval_loss'][-1]:.4f if history['eval_loss'] else 'N/A'}
+• Min Train Loss: {min(history['train_loss']):.4f}
+• Final Learning Rate: {history['learning_rate'][-1]:.2e if history['learning_rate'] else 'N/A'}
+        """
+        
+        ax4.text(0.1, 0.9, stats_text, transform=ax4.transAxes, fontsize=12,
+                verticalalignment='top', fontfamily='monospace',
+                bbox=dict(boxstyle='round', facecolor='lightgray', alpha=0.8))
+        
+        plt.tight_layout()
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        plt.close()
+        
+        print(f"Training curves saved to {save_path}")
+        
+        # 同时保存训练历史数据
+        history_path = os.path.join(self.output_dir, 'training_history.json')
+        with open(history_path, 'w') as f:
+            json.dump(history, f, indent=2)
+        print(f"Training history saved to {history_path}")
+        
         return save_path
 
 def create_training_config(
