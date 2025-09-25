@@ -12,6 +12,7 @@ from torch.utils.data import Dataset, DataLoader
 from typing import Dict, List, Any, Optional
 import random
 import re
+from transformers import DataCollatorForSeq2Seq
 
 class FoodDataset(Dataset):
     """食物营养分析数据集 - 支持图片+文本对输入"""
@@ -512,11 +513,57 @@ class FoodDataLoader:
     
     @staticmethod
     def collate_fn(batch):
-        """自定义批处理函数 - 专门为LLaVA优化"""
-        input_ids = torch.stack([item['input_ids'] for item in batch])
-        attention_mask = torch.stack([item['attention_mask'] for item in batch])
-        pixel_values = torch.stack([item['pixel_values'] for item in batch])
-        labels = torch.stack([item['labels'] for item in batch])
+        """自定义批处理函数 - 修复版本，支持动态padding"""
+        # 获取批次中所有张量的最大长度
+        max_input_length = max(item['input_ids'].size(0) for item in batch)
+        max_attention_length = max(item['attention_mask'].size(0) for item in batch)
+        max_labels_length = max(item['labels'].size(0) for item in batch)
+        
+        # 确保所有长度一致（应该都相同，但为了安全起见）
+        max_length = max(max_input_length, max_attention_length, max_labels_length)
+        
+        # 动态padding所有张量到相同长度
+        padded_input_ids = []
+        padded_attention_masks = []
+        padded_pixel_values = []
+        padded_labels = []
+        
+        for item in batch:
+            # Padding input_ids
+            input_ids = item['input_ids']
+            if input_ids.size(0) < max_length:
+                pad_length = max_length - input_ids.size(0)
+                # 使用pad_token_id进行padding，如果没有则使用0
+                pad_token_id = 0  # 通常0是pad token
+                padding = torch.full((pad_length,), pad_token_id, dtype=input_ids.dtype)
+                input_ids = torch.cat([input_ids, padding])
+            padded_input_ids.append(input_ids)
+            
+            # Padding attention_mask
+            attention_mask = item['attention_mask']
+            if attention_mask.size(0) < max_length:
+                pad_length = max_length - attention_mask.size(0)
+                padding = torch.zeros(pad_length, dtype=attention_mask.dtype)
+                attention_mask = torch.cat([attention_mask, padding])
+            padded_attention_masks.append(attention_mask)
+            
+            # Pixel values 不需要padding，因为图片尺寸是固定的
+            padded_pixel_values.append(item['pixel_values'])
+            
+            # Padding labels
+            labels = item['labels']
+            if labels.size(0) < max_length:
+                pad_length = max_length - labels.size(0)
+                # 标签的padding使用-100（忽略损失）
+                padding = torch.full((pad_length,), -100, dtype=labels.dtype)
+                labels = torch.cat([labels, padding])
+            padded_labels.append(labels)
+        
+        # 堆叠所有张量
+        input_ids = torch.stack(padded_input_ids)
+        attention_mask = torch.stack(padded_attention_masks)
+        pixel_values = torch.stack(padded_pixel_values)
+        labels = torch.stack(padded_labels)
         
         return {
             'input_ids': input_ids,
