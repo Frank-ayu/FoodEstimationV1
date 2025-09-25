@@ -145,16 +145,16 @@ training_templates:
     
   # 高性能训练配置
   high_performance:
-    batch_size: 4
+    batch_size: 8
     gradient_accumulation_steps: 2
     learning_rate: 0.0003
-    num_epochs: 5
+    num_epochs: 3
     lora_r: 32
     lora_alpha: 64
     lora_dropout: 0.05
-    warmup_steps: 200
+    warmup_steps: 100
     weight_decay: 0.005
-    max_length: 2048
+    max_length: 1024
     fp16: true
     description: "追求最佳性能的高配置训练"
     
