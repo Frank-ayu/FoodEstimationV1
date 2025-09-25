@@ -288,7 +288,7 @@ def main():
                        help="Path to the dataset JSON file")
     parser.add_argument("--image_dir", type=str, default="/root/autodl-tmp/data/", 
                        help="Path to the image directory")
-    parser.add_argument("--output_path", type=str, default="/Users/fenweiguo/Desktop/CursorFolder/FoodEstimation/visualization_samples.json", 
+    parser.add_argument("--output_path", type=str, default="/root/autodl-tmp/data/visualization/visualization_samples.json", 
                        help="Output path for visualization samples")
     parser.add_argument("--num_samples", type=int, default=500, 
                        help="Number of samples to generate")
