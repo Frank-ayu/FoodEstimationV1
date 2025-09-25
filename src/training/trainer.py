@@ -288,16 +288,20 @@ class FoodVLMTrainer:
         ax4 = axes[1, 1]
         ax4.axis('off')
         
+        # 修复：分别处理格式化和条件判断
+        final_eval_loss = f"{history['eval_loss'][-1]:.4f}" if history['eval_loss'] else 'N/A'
+        final_lr = f"{history['learning_rate'][-1]:.2e}" if history['learning_rate'] else 'N/A'
+        
         # 添加训练统计信息
         stats_text = f"""
 Training Statistics:
 • Total Steps: {len(history['train_loss'])}
 • Total Epochs: {max(history['epoch']) if history['epoch'] else 0}
 • Final Train Loss: {history['train_loss'][-1]:.4f}
-• Final Eval Loss: {history['eval_loss'][-1]:.4f if history['eval_loss'] else 'N/A'}
+• Final Eval Loss: {final_eval_loss}
 • Min Train Loss: {min(history['train_loss']):.4f}
-• Final Learning Rate: {history['learning_rate'][-1]:.2e if history['learning_rate'] else 'N/A'}
-        """
+• Final Learning Rate: {final_lr}
+"""
         
         ax4.text(0.1, 0.9, stats_text, transform=ax4.transAxes, fontsize=12,
                 verticalalignment='top', fontfamily='monospace',
