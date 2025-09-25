@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-快速测试脚本
+快速测试脚本 - 修复版本
 使用500个样本进行快速验证训练流程
+修复了LLaVA图片token不匹配的问题
 """
 
 import sys
@@ -13,10 +14,10 @@ from src.models.model_factory import VLMModelFactory
 import argparse
 
 def main():
-    parser = argparse.ArgumentParser(description="Quick test with 500 samples")
+    parser = argparse.ArgumentParser(description="Quick test with 500 samples - Fixed version")
     parser.add_argument("--model", type=str, default="llava_7b", 
                        help="Model key (e.g., llava_7b)")
-    parser.add_argument("--run_name", type=str, default="quick_test", 
+    parser.add_argument("--run_name", type=str, default="quick_test_fixed", 
                        help="Run name")
     parser.add_argument("--data_path", type=str, default="cal_meta_split.json", 
                        help="Path to dataset")
@@ -25,7 +26,7 @@ def main():
     
     args = parser.parse_args()
     
-    print("🚀 Starting Quick Test with 500 samples...")
+    print("🚀 Starting Quick Test with 500 samples (Fixed Version)...")
     print(f"Model: {args.model}")
     print(f"Run name: {args.run_name}")
     print(f"Data path: {args.data_path}")
@@ -42,9 +43,14 @@ def main():
     config['data']['data_path'] = args.data_path
     config['data']['image_dir'] = args.image_dir
     
-    print(f"\n📋 Quick Test Configuration:")
+    # 修复：使用更小的批处理大小来避免图片token不匹配问题
+    config['training']['batch_size'] = 1  # 强制使用批处理大小为1
+    config['training']['gradient_accumulation_steps'] = 8  # 增加梯度累积步数来保持有效批处理大小
+    
+    print(f"\n📋 Quick Test Configuration (Fixed):")
     print(f"  - Max samples: {config['training']['max_samples']}")
-    print(f"  - Batch size: {config['training']['batch_size']}")
+    print(f"  - Batch size: {config['training']['batch_size']} (fixed to 1)")
+    print(f"  - Gradient accumulation steps: {config['training']['gradient_accumulation_steps']}")
     print(f"  - Epochs: {config['training']['num_epochs']}")
     print(f"  - Learning rate: {config['training']['learning_rate']}")
     print(f"  - LoRA r: {config['training']['lora_r']}")
@@ -89,8 +95,8 @@ def main():
         print(f"\n✅ Quick test completed successfully!")
         print(f"📁 Output directory: {trainer.output_dir}")
         print(f"📁 LoRA weights: {lora_path}")
-        print(f"📊 Training curves: {trainer.output_dir}/training_curves.png")
-        print(f"📈 Training history: {trainer.output_dir}/training_history.json")
+        print(f"�� Training curves: {trainer.output_dir}/training_curves.png")
+        print(f"�� Training history: {trainer.output_dir}/training_history.json")
         
         # 打印最终评估结果
         print(f"\n📋 Final Evaluation Results:")
