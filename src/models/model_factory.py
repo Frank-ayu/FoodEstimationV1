@@ -175,9 +175,11 @@ To download {model_info['name']} ({model_key}):
         if tokenizer.pad_token is None:
             tokenizer.pad_token = tokenizer.eos_token
         
+        # 加载模型
         model = LlavaForConditionalGeneration.from_pretrained(
             model_id,
             torch_dtype=torch.float16 if self.device.type == "cuda" else torch.float32,
+            device_map="auto" if self.device.type == "cuda" else None,
             device_map=None,  # 不使用自动设备映射
             low_cpu_mem_usage=True,
             local_files_only=use_local_only
