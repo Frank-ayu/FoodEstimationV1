@@ -1,0 +1,4516 @@
+{
+  "0009785a2e": {
+    "title": "Rice With Lemon, Capers & Parsley",
+    "instructions": [
+      {
+        "text": "Add rice to a large pan of boiling water."
+      },
+      {
+        "text": "Cook over high heat about 15 minutes, until just tender."
+      },
+      {
+        "text": "Watch carefully to prevent overcooking."
+      },
+      {
+        "text": "Drain and rise thoroughly."
+      },
+      {
+        "text": "Heat 1 tablespoon butter in a heavy skillet or pan over low heat."
+      },
+      {
+        "text": "(I usually use same pan I used to cook the rice."
+      },
+      {
+        "text": ")."
+      },
+      {
+        "text": "Add rice, salt, and pepper."
+      },
+      {
+        "text": "Heat, stirring gently with a fork."
+      },
+      {
+        "text": "Stir in lemon juice, capers, and parsley and remove from heat."
+      },
+      {
+        "text": "Stir in remaining butter and adjust seasonings to taste."
+      },
+      {
+        "text": "Serve immediately."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "rice, white, long-grain, regular, unenriched, cooked without salt"
+      },
+      {
+        "text": "water, bottled, generic"
+      },
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "spices, pepper, black"
+      },
+      {
+        "text": "lemon juice, raw"
+      },
+      {
+        "text": "capers, canned"
+      },
+      {
+        "text": "parsley, fresh"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "red",
+      "saturates": "orange",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 0.44,
+        "nrg": 205.0,
+        "pro": 4.25,
+        "sat": 0.122,
+        "sod": 2.0,
+        "sug": 0.08
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 24.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 34.56,
+        "nrg": 306.0,
+        "pro": 0.36,
+        "sat": 21.506999999999998,
+        "sod": 6.0,
+        "sug": 0.03
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 27900.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.98,
+        "nrg": 84.0,
+        "pro": 3.36,
+        "sat": 0.44799999999999995,
+        "sod": 0.0,
+        "sug": 0.13999999999999999
+      },
+      {
+        "fat": 0.036875,
+        "nrg": 3.375,
+        "pro": 0.053125,
+        "sat": 0.006125,
+        "sod": 0.125,
+        "sug": 0.384375
+      },
+      {
+        "fat": 0.14,
+        "nrg": 4.0,
+        "pro": 0.4,
+        "sat": 0.04,
+        "sod": 404.0,
+        "sug": 0.08
+      },
+      {
+        "fat": 0.05875,
+        "nrg": 2.75,
+        "pro": 0.2225,
+        "sat": 0.009875,
+        "sod": 4.25,
+        "sug": 0.06375
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 57.34966592427616,
+      "fat": 3.4322726626545985,
+      "protein": 0.8193740226508077,
+      "salt": 6.714773965786854,
+      "saturates": 2.0976164526370655,
+      "sugars": 0.07374543903710373
+    },
+    "quantity": [
+      {
+        "text": "1"
+      },
+      {
+        "text": "3"
+      },
+      {
+        "text": "3"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "2"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      }
+    ],
+    "url": "http://www.food.com/recipe/rice-with-lemon-capers-parsley-390581",
+    "weight_per_ingr": [
+      158.0,
+      710.4000000000001,
+      42.599999999999994,
+      72.0,
+      32.199999999999996,
+      15.25,
+      17.2,
+      7.5
+    ],
+    "image_paths": [
+      "cal_data/b/8/0/6/b806da5758.jpg",
+      "cal_data/a/b/8/6/ab864b7ce1.jpg",
+      "cal_data/f/7/8/e/f78e8faf22.jpg",
+      "cal_data/b/b/9/c/bb9cbc3af4.jpg",
+      "cal_data/4/b/e/5/4be566438e.jpg",
+      "cal_data/6/8/5/d/685da35c46.jpg",
+      "cal_data/d/0/1/4/d014005103.jpg"
+    ]
+  },
+  "0017898fda": {
+    "title": "Peanut Butter Fudge Frosting",
+    "instructions": [
+      {
+        "text": "In a bowl, using an electric mixer, beat together peanut butter, butter, and salt until creamy."
+      },
+      {
+        "text": "With mixer on low speed, beat in powdered sugar, 1/2 cup at a time."
+      },
+      {
+        "text": "Increase speed to medium-high and beat until light and fluffy."
+      },
+      {
+        "text": "Add cocoa powder, beating until very smooth and creamy."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "peanut butter, smooth style, without salt"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "sugars, powdered"
+      },
+      {
+        "text": "cocoa, dry powder, unsweetened"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "green",
+      "saturates": "red",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 6266.88,
+        "nrg": 55488.0,
+        "pro": 65.28,
+        "sat": 3899.9359999999997,
+        "sod": 1088.0,
+        "sug": 5.44
+      },
+      {
+        "fat": 1578.2400000000002,
+        "nrg": 18336.0,
+        "pro": 682.5600000000001,
+        "sat": 317.18399999999997,
+        "sod": 480.0,
+        "sug": 322.56
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 145.08,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 934.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 4.0,
+        "sug": 234.74
+      },
+      {
+        "fat": 400.52,
+        "nrg": 6664.0,
+        "pro": 573.24,
+        "sat": 235.96,
+        "sod": 612.0,
+        "sug": 51.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 583.2030864108395,
+      "fat": 59.06122052311016,
+      "protein": 9.462527736921615,
+      "salt": 0.041706376793058324,
+      "saturates": 31.896170568573375,
+      "sugars": 4.396048515803943
+    },
+    "quantity": [
+      {
+        "text": "34"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "34"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "pinch"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.food.com/recipe/peanut-butter-fudge-frosting-485752",
+    "weight_per_ingr": [
+      7724.799999999999,
+      3072.0,
+      0.37439999999999996,
+      240.0,
+      2924.0
+    ],
+    "image_paths": [
+      "cal_data/c/e/7/8/ce78e56ae2.jpg",
+      "cal_data/2/b/8/1/2b81608fc7.jpg",
+      "cal_data/8/6/6/5/8665a78573.jpg",
+      "cal_data/7/3/a/9/73a96a9699.jpg",
+      "cal_data/1/0/e/1/10e1e8c18b.jpg",
+      "cal_data/5/9/1/8/5918edaa18.jpg",
+      "cal_data/8/c/3/2/8c3293e430.jpg"
+    ]
+  },
+  "00196f106d": {
+    "title": "Tomato-Olive Bread",
+    "instructions": [
+      {
+        "text": "Preheat the oven to 350 degrees."
+      },
+      {
+        "text": "Combine the first 8 (dry) ingredients in a mixing bowl and stir together."
+      },
+      {
+        "text": "Make a well in the center and add the rice milk and oil."
+      },
+      {
+        "text": "Stir until well combined, adding more rice milk as needed to make a smooth, slightly stiff batter."
+      },
+      {
+        "text": "Fold in the tomato and olives."
+      },
+      {
+        "text": "Pour the batter into a lightly oiled 9-by-5-by-3-inch loaf pan."
+      },
+      {
+        "text": "Bake for 45 to 50 minutes, or until a knife inserted into the center of the loaf tests clean."
+      },
+      {
+        "text": "Let cool until just warm, then cut into slices to serve."
+      },
+      {
+        "text": "Per slice (12 slices per loaf):"
+      },
+      {
+        "text": "Calories: 130"
+      },
+      {
+        "text": "Total fat: 4g"
+      },
+      {
+        "text": "Protein: 4g"
+      },
+      {
+        "text": "Fiber: 3g"
+      },
+      {
+        "text": "Carbohydrate: 22g"
+      },
+      {
+        "text": "Cholesterol: 0mg"
+      },
+      {
+        "text": "Sodium: 218mg"
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "wheat germ, crude"
+      },
+      {
+        "text": "leavening agents, baking powder, double-acting, sodium aluminum sulfate"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "sugars, granulated"
+      },
+      {
+        "text": "spices, cumin seed"
+      },
+      {
+        "text": "spices, basil, dried"
+      },
+      {
+        "text": "spices, thyme, dried"
+      },
+      {
+        "text": "rice, white, long-grain, regular, unenriched, cooked without salt"
+      },
+      {
+        "text": "oil, olive, salad or cooking"
+      },
+      {
+        "text": "tomatoes, red, ripe, raw, year round average"
+      },
+      {
+        "text": "olives, ripe, canned (small-extra large)"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "orange",
+      "saturates": "green",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 2.7675,
+        "nrg": 1023.75,
+        "pro": 29.0475,
+        "sat": 0.4365,
+        "sod": 4.5,
+        "sug": 0.765
+      },
+      {
+        "fat": 2.795,
+        "nrg": 103.5,
+        "pro": 6.655,
+        "sat": 0.47875,
+        "sod": 3.5,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 4.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 976.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 1162.5,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 48.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 0.0,
+        "sug": 12.570000000000002
+      },
+      {
+        "fat": 0.235,
+        "nrg": 4.0,
+        "pro": 0.185,
+        "sat": 0.016,
+        "sod": 2.0,
+        "sug": 0.025
+      },
+      {
+        "fat": 0.007499999999999999,
+        "nrg": 0.5,
+        "pro": 0.04,
+        "sat": 0.0037499999999999994,
+        "sod": 0.25,
+        "sug": 0.0025
+      },
+      {
+        "fat": 0.004368,
+        "nrg": 0.1872,
+        "pro": 0.0056159999999999995,
+        "sat": 0.0016848,
+        "sod": 0.0624,
+        "sug": 0.001248
+      },
+      {
+        "fat": 0.44,
+        "nrg": 205.0,
+        "pro": 4.25,
+        "sat": 0.122,
+        "sod": 2.0,
+        "sug": 0.08
+      },
+      {
+        "fat": 27.0,
+        "nrg": 238.0,
+        "pro": 0.0,
+        "sat": 3.728,
+        "sod": 0.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.44999999999999996,
+        "nrg": 40.5,
+        "pro": 1.965,
+        "sat": 0.063,
+        "sod": 10.5,
+        "sug": 5.88
+      },
+      {
+        "fat": 7.2,
+        "nrg": 80.0,
+        "pro": 0.56,
+        "sat": 0.952,
+        "sod": 496.0,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 215.25798503401262,
+      "fat": 5.038187091842027,
+      "protein": 5.260997645442637,
+      "salt": 0.8183523173678231,
+      "saturates": 0.7146803214733315,
+      "sugars": 2.3803951625758173
+    },
+    "quantity": [
+      {
+        "text": "2 1/4"
+      },
+      {
+        "text": "1/4"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1/2"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "1/2"
+      },
+      {
+        "text": "1/4"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1 1/2"
+      },
+      {
+        "text": "1/2"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "pinch"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.epicurious.com/recipes/food/views/tomato-olive-bread-378996",
+    "weight_per_ingr": [
+      281.25,
+      28.75,
+      9.2,
+      3.0,
+      12.600000000000001,
+      1.05,
+      0.175,
+      0.0624,
+      158.0,
+      27.0,
+      223.5,
+      67.2
+    ],
+    "image_paths": [
+      "cal_data/5/f/3/9/5f397284e9.jpg",
+      "cal_data/5/3/9/a/539a56dce8.jpg",
+      "cal_data/d/0/5/1/d05150c701.jpg",
+      "cal_data/f/4/7/e/f47e03b6ad.jpg",
+      "cal_data/5/4/2/6/5426bdc383.jpg"
+    ]
+  },
+  "001c26691f": {
+    "title": "Chocolate Almond Sauce",
+    "instructions": [
+      {
+        "text": "In a heavy-gauge saucepan over low heat, combine chocolate morsels, cream, butter and salt, stirring until smooth; remove from heat."
+      },
+      {
+        "text": "Stir in almonds and liqueur; cool slightly."
+      },
+      {
+        "text": "Serve warm over ice cream."
+      },
+      {
+        "text": "Refrigerate."
+      },
+      {
+        "text": "Reheating Sauce: Reheat sauce over low heat, stirring until smooth."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "candies, semisweet chocolate"
+      },
+      {
+        "text": "cream, whipped, cream topping, pressurized"
+      },
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "nuts, almonds"
+      },
+      {
+        "text": "nuts, almonds"
+      }
+    ],
+    "partition": "test",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "red",
+      "saturates": "red",
+      "sugars": "orange"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 54.6,
+        "nrg": 874.0,
+        "pro": 7.64,
+        "sat": 32.305,
+        "sod": 20.0,
+        "sug": 99.19
+      },
+      {
+        "fat": 186.62,
+        "nrg": 2156.0,
+        "pro": 26.88,
+        "sat": 116.18599999999999,
+        "sod": 70.0,
+        "sug": 67.2
+      },
+      {
+        "fat": 23.04,
+        "nrg": 204.0,
+        "pro": 0.24,
+        "sat": 14.338,
+        "sod": 4.0,
+        "sug": 0.02
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 41850.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 999.6000000000001,
+        "nrg": 11592.0,
+        "pro": 423.35999999999996,
+        "sat": 76.11800000000001,
+        "sod": 14.0,
+        "sug": 87.08
+      },
+      {
+        "fat": 8.925,
+        "nrg": 103.5,
+        "pro": 3.78,
+        "sat": 0.679625,
+        "sod": 0.125,
+        "sug": 0.7775
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 469.73594166646996,
+      "fat": 40.0464088223958,
+      "protein": 14.533040721775173,
+      "salt": 3.300385035907843,
+      "saturates": 7.539518292155336,
+      "sugars": 8.000173049846222
+    },
+    "quantity": [
+      {
+        "text": "1"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "18"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "2"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      }
+    ],
+    "url": "http://www.food.com/recipe/chocolate-almond-sauce-5331",
+    "weight_per_ingr": [
+      182.0,
+      840.0,
+      28.4,
+      108.0,
+      2002.0,
+      17.875
+    ],
+    "image_paths": [
+      "cal_data/b/a/0/9/ba09f0d3e4.jpg",
+      "cal_data/a/e/e/1/aee15f17c5.jpg",
+      "cal_data/6/a/1/b/6a1bc6ea51.jpg",
+      "cal_data/d/a/6/d/da6daccfe7.jpg",
+      "cal_data/6/2/5/0/625028a3ba.jpg",
+      "cal_data/3/8/3/3/383392e259.jpg",
+      "cal_data/e/3/a/4/e3a4d5bbf5.jpg",
+      "cal_data/5/f/0/c/5f0c0dd598.jpg",
+      "cal_data/4/a/b/e/4abecd304b.jpg",
+      "cal_data/e/5/9/0/e590f0246c.jpg",
+      "cal_data/2/f/d/6/2fd6b57ca7.jpg"
+    ]
+  },
+  "001da6fa18": {
+    "title": "Pitas",
+    "instructions": [
+      {
+        "text": "Mix together."
+      },
+      {
+        "text": "Knead 10 minute."
+      },
+      {
+        "text": "put in oiled bowl and cover with damp towel 90 minute."
+      },
+      {
+        "text": "Punch down and break into 8 pieces."
+      },
+      {
+        "text": "Cover and let sit 10 minute."
+      },
+      {
+        "text": "flatten"
+      },
+      {
+        "text": "bake at 400 for 3 minute."
+      },
+      {
+        "text": "for more crispy bake extra 3 minute."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "sugars, granulated"
+      },
+      {
+        "text": "leavening agents, yeast, baker's, active dry"
+      },
+      {
+        "text": "water, bottled, generic"
+      },
+      {
+        "text": "oil, olive, salad or cooking"
+      }
+    ],
+    "partition": "test",
+    "fsa_lights_per100g": {
+      "fat": "green",
+      "salt": "orange",
+      "saturates": "green",
+      "sugars": "red"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 3.69,
+        "nrg": 1365.0,
+        "pro": 38.730000000000004,
+        "sat": 0.5820000000000001,
+        "sod": 6.0,
+        "sug": 1.02
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 2325.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 576.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 0.0,
+        "sug": 150.84
+      },
+      {
+        "fat": 0.6,
+        "nrg": 26.0,
+        "pro": 3.24,
+        "sat": 0.08,
+        "sod": 4.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 10.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 13.5,
+        "nrg": 119.0,
+        "pro": 0.0,
+        "sat": 1.864,
+        "sod": 0.0,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 245.4984112039543,
+      "fat": 2.0936801223961394,
+      "protein": 4.9393903730728494,
+      "salt": 0.6899493939037308,
+      "saturates": 0.2972813934329764,
+      "sugars": 17.872190184771096
+    },
+    "quantity": [
+      {
+        "text": "3"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1 1/4"
+      },
+      {
+        "text": "1"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      }
+    ],
+    "url": "http://www.food.com/recipe/pitas-367679",
+    "weight_per_ingr": [
+      375.0,
+      6.0,
+      151.20000000000002,
+      8.0,
+      296.0,
+      13.5
+    ],
+    "image_paths": [
+      "cal_data/e/8/9/6/e8969503f2.jpg",
+      "cal_data/f/e/7/b/fe7b4b7100.jpg",
+      "cal_data/7/d/8/b/7d8b5bba71.jpg",
+      "cal_data/7/2/0/1/72011aab87.jpg",
+      "cal_data/6/1/2/a/612a9111bb.jpg"
+    ]
+  },
+  "001f938961": {
+    "title": "Bacon and Cheese Party Bread",
+    "instructions": [
+      {
+        "text": "Place bacon in a large, deep skillet."
+      },
+      {
+        "text": "Cook over medium-high heat until evenly brown."
+      },
+      {
+        "text": "Drain, crumble and set aside."
+      },
+      {
+        "text": "Preheat oven to broil."
+      },
+      {
+        "text": "In a medium bowl combine the bacon, cheese, mustard and mayonnaise."
+      },
+      {
+        "text": "Stir well."
+      },
+      {
+        "text": "Arrange party bread on a cookie sheet."
+      },
+      {
+        "text": "Spoon mixture onto each slice of bread."
+      },
+      {
+        "text": "Broil for 5 minutes, or until bubbly."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "bacon, meatless"
+      },
+      {
+        "text": "cheese, cheddar"
+      },
+      {
+        "text": "mustard, prepared, yellow"
+      },
+      {
+        "text": "salad dressing, mayonnaise, regular"
+      },
+      {
+        "text": "wheat flours, bread, unenriched"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "red",
+      "saturates": "red",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 133.90035840000002,
+        "nrg": 1401.59928,
+        "pro": 53.024904799999995,
+        "sat": 20.96502224,
+        "sod": 6645.1228,
+        "sug": 0.0
+      },
+      {
+        "fat": 109.925,
+        "nrg": 1332.5,
+        "pro": 75.47500000000001,
+        "sat": 62.26,
+        "sod": 2155.0,
+        "sug": 1.575
+      },
+      {
+        "fat": 1.0200000000000002,
+        "nrg": 18.0,
+        "pro": 1.1400000000000001,
+        "sat": 0.066,
+        "sod": 330.0,
+        "sug": 0.30000000000000004
+      },
+      {
+        "fat": 165.28,
+        "nrg": 1504.0,
+        "pro": 2.08,
+        "sat": 25.84,
+        "sod": 1408.0,
+        "sug": 1.28
+      },
+      {
+        "fat": 7.5296272,
+        "nrg": 1637.4671199999998,
+        "pro": 54.3403216,
+        "sat": 1.1067644799999998,
+        "sod": 9.07184,
+        "sug": 1.4061351999999998
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 396.07726964806074,
+      "fat": 28.06851320981946,
+      "protein": 12.504181926687385,
+      "salt": 1.7720611646361792,
+      "saturates": 7.408533070248067,
+      "sugars": 0.3065311992602071
+    },
+    "quantity": [
+      {
+        "text": "1"
+      },
+      {
+        "text": "2 1/2"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "1"
+      }
+    ],
+    "unit": [
+      {
+        "text": "pound"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "pound"
+      }
+    ],
+    "url": "http://www.food.com/recipe/bacon-and-cheese-party-bread-460421",
+    "weight_per_ingr": [
+      453.592,
+      330.0,
+      30.0,
+      220.8,
+      453.592
+    ],
+    "image_paths": [
+      "cal_data/0/c/9/1/0c914d5929.jpg",
+      "cal_data/6/d/d/0/6dd0c6e78d.jpg",
+      "cal_data/2/a/7/8/2a78834996.jpg",
+      "cal_data/4/d/9/7/4d970ae3f5.jpg",
+      "cal_data/2/9/4/6/2946e74388.jpg"
+    ]
+  },
+  "002e56d273": {
+    "title": "Peanut Brittle",
+    "instructions": [
+      {
+        "text": "Mix baking soda, teaspoon water and vanilla."
+      },
+      {
+        "text": "Set a side."
+      },
+      {
+        "text": "Mix sugar, 1/2 cup water and corn syrup in a heavy pot."
+      },
+      {
+        "text": "Stirring constantly."
+      },
+      {
+        "text": "Cook over medium heat unitl it reaches 240* on candy thermometer."
+      },
+      {
+        "text": "Add butter and nuts."
+      },
+      {
+        "text": "Cook until mixture reaches 290* on candy thermometer."
+      },
+      {
+        "text": "Immediatly turn off heat."
+      },
+      {
+        "text": "Quickly stir in baking soda mixture until light and fluffy."
+      },
+      {
+        "text": "Pour onto greased half sheet pan, spray with cooking spray."
+      },
+      {
+        "text": "Roll with a marble rolling pin until about 1/4 inch thick."
+      },
+      {
+        "text": "Cool completely: at least 1 hour."
+      },
+      {
+        "text": "Break into small pieces and store in an air tight container."
+      },
+      {
+        "text": "Makes about 3 lbs."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "sugars, granulated"
+      },
+      {
+        "text": "syrups, corn, light"
+      },
+      {
+        "text": "water, bottled, generic"
+      },
+      {
+        "text": "water, bottled, generic"
+      },
+      {
+        "text": "oil, corn, peanut, and olive"
+      },
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "vanilla extract"
+      },
+      {
+        "text": "leavening agents, baking soda"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "green",
+      "saturates": "orange",
+      "sugars": "red"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 0.0,
+        "nrg": 2304.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 0.0,
+        "sug": 603.36
+      },
+      {
+        "fat": 0.68,
+        "nrg": 965.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 211.0,
+        "sug": 261.79
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 96.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 0.16666666666666666,
+        "sug": 0.0
+      },
+      {
+        "fat": 1008.0,
+        "nrg": 8928.0,
+        "pro": 0.0,
+        "sat": 144.792,
+        "sod": 0.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 46.08,
+        "nrg": 408.0,
+        "pro": 0.48,
+        "sat": 28.676,
+        "sod": 8.0,
+        "sug": 0.04
+      },
+      {
+        "fat": 0.0,
+        "nrg": 24.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 0.0,
+        "sug": 1.06
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 1259.0,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 259.3152822646881,
+      "fat": 21.65772326561901,
+      "protein": 0.00985599299129387,
+      "salt": 0.08080716475934949,
+      "saturates": 3.5618737337786777,
+      "sugars": 17.786987351475663
+    },
+    "quantity": [
+      {
+        "text": "3"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "4 1/2"
+      },
+      {
+        "text": "4"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      }
+    ],
+    "url": "http://www.food.com/recipe/peanut-brittle-408102",
+    "weight_per_ingr": [
+      604.8000000000001,
+      341.0,
+      2841.6000000000004,
+      4.933333333333334,
+      1008.0,
+      56.8,
+      8.4,
+      4.6
+    ],
+    "image_paths": [
+      "cal_data/7/c/7/0/7c70b1c2cf.jpg",
+      "cal_data/d/c/f/d/dcfd548c47.jpg"
+    ]
+  },
+  "003f212b7c": {
+    "title": "Pita Bread",
+    "instructions": [
+      {
+        "text": "Gather your mise en place."
+      },
+      {
+        "text": "You will need all ingredients above 2 mixing bowls, plastic wrap, rolling pin and clean work surface..."
+      },
+      {
+        "text": "Add flour, salt, sugar, yeast and 1/2 the oil into your mixing bowl."
+      },
+      {
+        "text": "If you have fresh active yeast you wanna put the yeast water and sugar into a separate container for 20 mins and let it bubble up before adding to flour"
+      },
+      {
+        "text": "Start adding water and mixing till you have a ball of dough"
+      },
+      {
+        "text": "Remove from bowl and lay on clean floured surface and start kneading till you have a smooth ball."
+      },
+      {
+        "text": "About 10 mins Not too much flour but add little by little as needed"
+      },
+      {
+        "text": "Rub oil on other mixing bowl and all over dough ball."
+      },
+      {
+        "text": "Cover with plastic wrap and allow to double in size."
+      },
+      {
+        "text": "About 30 mins to an hour depending on surrounding temperature"
+      },
+      {
+        "text": "Once doubled in size remove from bowl and place on clean in floured surface and, press down all over on dough with all fingers to redistribute the gas bubbles, called punching, then portion out 8 balls and you could wrap in plastic and freeze for later date or roll out on floured surface to about 1/4 to a 1/3 of an inch thick"
+      },
+      {
+        "text": "Bake in oven at 350 for about 15 mins or until it puffs up ."
+      },
+      {
+        "text": "Or grill for about 2 maybe 3 mins on each side until puffed up."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "honey"
+      },
+      {
+        "text": "leavening agents, yeast, baker's, active dry"
+      },
+      {
+        "text": "water, bottled, generic"
+      },
+      {
+        "text": "oil, olive, salad or cooking"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "orange",
+      "saturates": "green",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 3.69,
+        "nrg": 1365.0,
+        "pro": 38.730000000000004,
+        "sat": 0.5820000000000001,
+        "sod": 6.0,
+        "sug": 1.02
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 3487.5,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 64.4375,
+        "pro": 0.06375,
+        "sat": 0.0,
+        "sod": 0.875,
+        "sug": 17.399375
+      },
+      {
+        "fat": 0.6,
+        "nrg": 26.0,
+        "pro": 3.24,
+        "sat": 0.08,
+        "sod": 4.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 12.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 27.0,
+        "nrg": 238.0,
+        "pro": 0.0,
+        "sat": 3.728,
+        "sod": 0.0,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 212.90723075230625,
+      "fat": 3.9339315742326852,
+      "protein": 5.284688280869388,
+      "salt": 1.103353711241376,
+      "saturates": 0.5519322342883186,
+      "sugars": 2.3157737580738944
+    },
+    "quantity": [
+      {
+        "text": "3"
+      },
+      {
+        "text": "1 1/2"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1 1/2"
+      },
+      {
+        "text": "2"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      }
+    ],
+    "url": "https://cookpad.com/us/recipes/348433-pita-bread",
+    "weight_per_ingr": [
+      375.0,
+      9.0,
+      21.1875,
+      8.0,
+      355.20000000000005,
+      27.0
+    ],
+    "image_paths": [
+      "cal_data/2/a/4/d/2a4dd3e62d.jpg"
+    ]
+  },
+  "0040208bde": {
+    "title": "Dijon Potato Leek Soup",
+    "instructions": [
+      {
+        "text": "Saute leeks, garlic and thyme in hot oil in stockpot on medium heat until tender."
+      },
+      {
+        "text": "Add vegetable stock and potatoes."
+      },
+      {
+        "text": "Bring to boil."
+      },
+      {
+        "text": "Reduce heat to medium-low; cover."
+      },
+      {
+        "text": "Simmer 30 minutes, stirring occasionally."
+      },
+      {
+        "text": "Add to blender container in batches; process until pureed."
+      },
+      {
+        "text": "Return to stockpot."
+      },
+      {
+        "text": "Stir in cream."
+      },
+      {
+        "text": "Cook 5 minutes or until heated through, stirring occasionally."
+      },
+      {
+        "text": "Remove from heat."
+      },
+      {
+        "text": "Add mustard; stir with wire whisk until well blended."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "leeks, (bulb and lower leaf-portion), raw"
+      },
+      {
+        "text": "spices, garlic powder"
+      },
+      {
+        "text": "spices, thyme, dried"
+      },
+      {
+        "text": "oil, olive, salad or cooking"
+      },
+      {
+        "text": "shortening, vegetable, household, composite"
+      },
+      {
+        "text": "potatoes, raw, skin"
+      },
+      {
+        "text": "cream, whipped, cream topping, pressurized"
+      },
+      {
+        "text": "mustard, prepared, yellow"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "green",
+      "saturates": "red",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 4.32,
+        "nrg": 864.0,
+        "pro": 21.28,
+        "sat": 0.576,
+        "sod": 288.0,
+        "sug": 55.52
+      },
+      {
+        "fat": 0.060000000000000005,
+        "nrg": 30.0,
+        "pro": 1.53,
+        "sat": 0.024,
+        "sod": 6.0,
+        "sug": 0.24000000000000002
+      },
+      {
+        "fat": 0.14,
+        "nrg": 6.0,
+        "pro": 0.18,
+        "sat": 0.054,
+        "sod": 2.0,
+        "sug": 0.04
+      },
+      {
+        "fat": 108.0,
+        "nrg": 952.0,
+        "pro": 0.0,
+        "sat": 14.912,
+        "sod": 0.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 9830.400000000001,
+        "nrg": 86784.0,
+        "pro": 0.0,
+        "sat": 2455.2960000000003,
+        "sod": 768.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 2.4,
+        "nrg": 1392.0,
+        "pro": 61.67999999999999,
+        "sat": 0.624,
+        "sod": 240.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 39.99,
+        "nrg": 462.0,
+        "pro": 5.76,
+        "sat": 24.897,
+        "sod": 15.0,
+        "sug": 14.399999999999999
+      },
+      {
+        "fat": 16.320000000000004,
+        "nrg": 288.0,
+        "pro": 18.240000000000002,
+        "sat": 1.056,
+        "sod": 5280.0,
+        "sug": 4.800000000000001
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 628.9309047576158,
+      "fat": 69.2935976222313,
+      "protein": 0.7528908041597094,
+      "salt": 0.11429848202470608,
+      "saturates": 17.302832953435363,
+      "sugars": 0.5196172845493533
+    },
+    "quantity": [
+      {
+        "text": "1"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1/2"
+      },
+      {
+        "text": "3"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "3"
+      },
+      {
+        "text": "2"
+      }
+    ],
+    "unit": [
+      {
+        "text": "gallon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "gallon"
+      },
+      {
+        "text": "gallon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.kraftrecipes.com/recipes/dijon-potato-leek-soup-97321.aspx",
+    "weight_per_ingr": [
+      1424.0,
+      9.3,
+      2.0,
+      108.0,
+      9830.400000000001,
+      2400.0,
+      180.0,
+      480.0
+    ],
+    "image_paths": [
+      "cal_data/e/0/d/5/e0d5a6da72.jpg",
+      "cal_data/0/6/6/b/066baccfec.jpg",
+      "cal_data/d/2/3/0/d2309b8038.jpg",
+      "cal_data/8/8/d/e/88dedfe8b0.jpg",
+      "cal_data/0/a/a/7/0aa78123e7.jpg",
+      "cal_data/3/2/b/2/32b2edf891.jpg",
+      "cal_data/0/8/b/2/08b2c6c0bf.jpg",
+      "cal_data/c/4/f/f/c4ff0e0042.jpg",
+      "cal_data/8/4/4/5/84451ec320.jpg"
+    ]
+  },
+  "004ac39841": {
+    "title": "Easy Pizza Dough for Bread Machine",
+    "instructions": [
+      {
+        "text": "Add ingredients to pan in order listed, set bread machine on\"dough\" and walk away."
+      },
+      {
+        "text": "After the cycle is completed, lightly coat dough ball in flour and roll or slap out to desired size."
+      },
+      {
+        "text": "Top with desired sauce, cheeses, meats and/or veggies and bake at 450 until cheese is golden brown."
+      },
+      {
+        "text": "Will make a 9-10\" pizza of average thickness, or a 13-14\" thin crust pizza."
+      },
+      {
+        "text": "For best results, bake on a preheated baking stone sprinkled with corn meal."
+      },
+      {
+        "text": "Notes: You may substitute beer for all or part of the water."
+      },
+      {
+        "text": "I've used 3/4 cup flat beer and 1/4 water with excellent results."
+      },
+      {
+        "text": "A teaspoon of semolina may be added as well -- it provides a nice crunchiness to the dough when baked."
+      },
+      {
+        "text": "Corn meal can be substituted for the semolina (and likewise, semolina can be used to dust the pizza peel and/or baking stone)."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "water, bottled, generic"
+      },
+      {
+        "text": "oil, olive, salad or cooking"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "wheat flours, bread, unenriched"
+      },
+      {
+        "text": "sugars, granulated"
+      },
+      {
+        "text": "wheat flours, bread, unenriched"
+      },
+      {
+        "text": "spices, parsley, dried"
+      },
+      {
+        "text": "semolina, unenriched"
+      }
+    ],
+    "partition": "val",
+    "fsa_lights_per100g": {
+      "fat": "green",
+      "salt": "red",
+      "saturates": "green",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 8.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 13.5,
+        "nrg": 119.0,
+        "pro": 0.0,
+        "sat": 1.864,
+        "sod": 0.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 79050.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 6.8100000000000005,
+        "nrg": 1485.0,
+        "pro": 49.230000000000004,
+        "sat": 1.002,
+        "sod": 9.0,
+        "sug": 1.26
+      },
+      {
+        "fat": 0.0,
+        "nrg": 32.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 0.0,
+        "sug": 8.38
+      },
+      {
+        "fat": 0.04729166666666666,
+        "nrg": 10.3125,
+        "pro": 0.341875,
+        "sat": 0.006958333333333334,
+        "sod": 0.0625,
+        "sug": 0.008749999999999999
+      },
+      {
+        "fat": 0.05999999999999999,
+        "nrg": 2.0,
+        "pro": 0.26,
+        "sat": 0.013999999999999999,
+        "sod": 4.0,
+        "sug": 0.08
+      },
+      {
+        "fat": 0.03645833333333333,
+        "nrg": 12.520833333333332,
+        "pro": 0.44125,
+        "sat": 0.005229166666666667,
+        "sod": 0.041666666666666664,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 188.5097045136393,
+      "fat": 2.3215636941470246,
+      "protein": 5.706154704702812,
+      "salt": 22.437035346751923,
+      "saturates": 0.3282721993114146,
+      "sugars": 1.104243123604858
+    },
+    "quantity": [
+      {
+        "text": "1"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "34"
+      },
+      {
+        "text": "3"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      }
+    ],
+    "url": "http://www.food.com/recipe/easy-pizza-dough-for-bread-machine-60816",
+    "weight_per_ingr": [
+      236.8,
+      13.5,
+      203.99999999999997,
+      411.0,
+      8.4,
+      2.8541666666666665,
+      1.0,
+      3.4791666666666665
+    ],
+    "image_paths": [
+      "cal_data/1/f/8/b/1f8ba3d3dd.jpg",
+      "cal_data/c/7/e/b/c7eb18e182.jpg",
+      "cal_data/f/c/9/a/fc9a8bb99d.jpg",
+      "cal_data/2/4/b/7/24b7f36773.jpg",
+      "cal_data/d/a/4/3/da43041247.jpg"
+    ]
+  },
+  "005836ace7": {
+    "title": "My Easy Chicken Ala King",
+    "instructions": [
+      {
+        "text": "In a large skillet, melt 2 tablespoons butter over medium-high heat."
+      },
+      {
+        "text": "Saute the chicken and mushrooms for 5-6 minutes, or until no pink remains in the chicken."
+      },
+      {
+        "text": "Remove the chicken and mushrooms from the skillet; discard the pan juices."
+      },
+      {
+        "text": "Add the remaining butter, flour, salt, and pepper to the skillet; cook, whisking constantly, until the butter melts."
+      },
+      {
+        "text": "Slowly add the chicken broth and cream; bring to a boil, whisking until smooth and thickened."
+      },
+      {
+        "text": "Reduce the heat to medium-low, return the chicken and mushrooms to the skillet; add the peas and pimientos."
+      },
+      {
+        "text": "Simmer until heated through, stirring constantly."
+      },
+      {
+        "text": "Serve immediately."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "chicken, broiler or fryers, breast, skinless, boneless, meat only, raw"
+      },
+      {
+        "text": "mushrooms, white, raw"
+      },
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "spices, pepper, black"
+      },
+      {
+        "text": "soup, chicken broth or bouillon, dry"
+      },
+      {
+        "text": "cream, fluid, heavy whipping"
+      },
+      {
+        "text": "peas, green, frozen, unprepared"
+      },
+      {
+        "text": "spices, pepper, black"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "red",
+      "saturates": "red",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 2211.84,
+        "nrg": 19584.0,
+        "pro": 23.04,
+        "sat": 1376.4479999999999,
+        "sod": 384.0,
+        "sug": 1.92
+      },
+      {
+        "fat": 17.8261656,
+        "nrg": 816.4655999999999,
+        "pro": 153.0873,
+        "sat": 3.830584439999999,
+        "sod": 306.1746,
+        "sug": 0.0
+      },
+      {
+        "fat": 18.5065536,
+        "nrg": 1197.4828799999998,
+        "pro": 168.19191359999996,
+        "sat": 2.7215519999999995,
+        "sod": 272.1552,
+        "sug": 107.77345919999998
+      },
+      {
+        "fat": 0.46125,
+        "nrg": 170.625,
+        "pro": 4.8412500000000005,
+        "sat": 0.07275000000000001,
+        "sod": 0.75,
+        "sug": 0.1275
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 2325.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.98,
+        "nrg": 84.0,
+        "pro": 3.36,
+        "sat": 0.44799999999999995,
+        "sod": 0.0,
+        "sug": 0.13999999999999999
+      },
+      {
+        "fat": 55.0887484,
+        "nrg": 1059.7043099999999,
+        "pro": 66.12237379999999,
+        "sat": 13.6134299,
+        "sod": 94758.20375,
+        "sug": 68.9006248
+      },
+      {
+        "fat": 43.3,
+        "nrg": 408.0,
+        "pro": 3.41,
+        "sat": 27.638,
+        "sod": 32.0,
+        "sug": 3.5
+      },
+      {
+        "fat": 1.020582,
+        "nrg": 196.46203500000001,
+        "pro": 13.3185951,
+        "sat": 0.16839603,
+        "sod": 275.55714,
+        "sug": 12.757275
+      },
+      {
+        "fat": 1.8483873999999998,
+        "nrg": 142.31448999999998,
+        "pro": 5.8910261,
+        "sat": 0.7892500799999999,
+        "sod": 11.3398,
+        "sug": 0.3628736
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 242.31636992905715,
+      "fat": 24.07766116846326,
+      "protein": 4.519416360869994,
+      "salt": 2.5186439350453504,
+      "saturates": 14.602346501269059,
+      "sugars": 2.002126678454883
+    },
+    "quantity": [
+      {
+        "text": "12"
+      },
+      {
+        "text": "1 1/2"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "6"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "9"
+      },
+      {
+        "text": "2"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "pound"
+      },
+      {
+        "text": "pound"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "ounce"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "ounce"
+      },
+      {
+        "text": "ounce"
+      }
+    ],
+    "url": "http://www.food.com/recipe/my-easy-chicken-ala-king-367892",
+    "weight_per_ingr": [
+      2726.3999999999996,
+      680.3879999999999,
+      5443.103999999999,
+      46.875,
+      6.0,
+      32.199999999999996,
+      396.893,
+      120.0,
+      255.1455,
+      56.699
+    ],
+    "image_paths": [
+      "cal_data/6/6/f/e/66fe054923.jpg",
+      "cal_data/6/5/5/e/655e22fffd.jpg"
+    ]
+  },
+  "006881abf8": {
+    "title": "Walnut Shortbread Cookies",
+    "instructions": [
+      {
+        "text": "Resift the flour with the baking powder."
+      },
+      {
+        "text": "Cream the butter with the sugar until light and fluffy."
+      },
+      {
+        "text": "Gradually blend in the flour mixture."
+      },
+      {
+        "text": "Stir in the walnuts."
+      },
+      {
+        "text": "Cover and chill for at least 2 hours."
+      },
+      {
+        "text": "Roll out onto floured board to 1/4\" thickness."
+      },
+      {
+        "text": "Cut into any shape."
+      },
+      {
+        "text": "Bake on ungreased cookie sheets at 300 degrees for about 20 minutes or until the edges are lightly browned."
+      },
+      {
+        "text": "Make 2 to 2 1/2 dozen delicious cookies."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "leavening agents, baking powder, double-acting, sodium aluminum sulfate"
+      },
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "sugars, powdered"
+      },
+      {
+        "text": "nuts, walnuts, english"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "orange",
+      "saturates": "red",
+      "sugars": "red"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 2.46,
+        "nrg": 910.0,
+        "pro": 25.82,
+        "sat": 0.388,
+        "sod": 4.0,
+        "sug": 0.68
+      },
+      {
+        "fat": 0.0,
+        "nrg": 27.999999999999996,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 6831.999999999999,
+        "sug": 0.0
+      },
+      {
+        "fat": 184.32,
+        "nrg": 1632.0,
+        "pro": 1.92,
+        "sat": 114.704,
+        "sod": 32.0,
+        "sug": 0.16
+      },
+      {
+        "fat": 0.0,
+        "nrg": 5604.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 24.0,
+        "sug": 1408.44
+      },
+      {
+        "fat": 915.5999999999999,
+        "nrg": 9180.0,
+        "pro": 213.84,
+        "sat": 86.00399999999999,
+        "sod": 24.0,
+        "sug": 36.599999999999994
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 512.5827032136107,
+      "fat": 32.560845935727784,
+      "protein": 7.135515122873347,
+      "salt": 0.5106923440453686,
+      "saturates": 5.939744801512288,
+      "sugars": 42.706758034026464
+    },
+    "quantity": [
+      {
+        "text": "2"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "12"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.food.com/recipe/walnut-shortbread-cookies-198862",
+    "weight_per_ingr": [
+      250.0,
+      64.39999999999999,
+      227.2,
+      1440.0,
+      1404.0
+    ],
+    "image_paths": [
+      "cal_data/a/7/7/d/a77dc31aa8.jpg",
+      "cal_data/6/c/6/c/6c6cbbc3ba.jpg",
+      "cal_data/d/5/9/c/d59c151300.jpg",
+      "cal_data/b/3/8/9/b389951936.jpg",
+      "cal_data/8/9/5/0/8950933e76.jpg",
+      "cal_data/8/9/8/4/8984adc86d.jpg",
+      "cal_data/a/e/7/f/ae7f58f4e8.jpg",
+      "cal_data/1/d/6/9/1d69ceeb3c.jpg"
+    ]
+  },
+  "007093b095": {
+    "title": "Creamy French Dressing",
+    "instructions": [
+      {
+        "text": "Process all ingredients EXCEPT OIL in a blender or food processor until smooth."
+      },
+      {
+        "text": "With machine running, slowly pour in oil until mixture is thickened and blended."
+      },
+      {
+        "text": "Pour into bottles or jars."
+      },
+      {
+        "text": "Cover tightly."
+      },
+      {
+        "text": "Shake before using."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "vinegar, red wine"
+      },
+      {
+        "text": "tomatoes, red, ripe, raw, year round average"
+      },
+      {
+        "text": "mustard, prepared, yellow"
+      },
+      {
+        "text": "sugars, granulated"
+      },
+      {
+        "text": "spices, garlic powder"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "spices, pepper, black"
+      },
+      {
+        "text": "oil, olive, salad or cooking"
+      }
+    ],
+    "partition": "val",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "red",
+      "saturates": "green",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 0.0,
+        "nrg": 576.0,
+        "pro": 1.92,
+        "sat": 0.0,
+        "sod": 192.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.056249999999999994,
+        "nrg": 5.0625,
+        "pro": 0.245625,
+        "sat": 0.007875,
+        "sod": 1.3125,
+        "sug": 0.735
+      },
+      {
+        "fat": 0.5100000000000001,
+        "nrg": 9.0,
+        "pro": 0.5700000000000001,
+        "sat": 0.033,
+        "sod": 165.0,
+        "sug": 0.15000000000000002
+      },
+      {
+        "fat": 0.0,
+        "nrg": 48.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 0.0,
+        "sug": 12.570000000000002
+      },
+      {
+        "fat": 0.04,
+        "nrg": 20.0,
+        "pro": 1.02,
+        "sat": 0.016,
+        "sod": 4.0,
+        "sug": 0.16
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 27900.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.98,
+        "nrg": 84.0,
+        "pro": 3.36,
+        "sat": 0.44799999999999995,
+        "sod": 0.0,
+        "sug": 0.13999999999999999
+      },
+      {
+        "fat": 216.0,
+        "nrg": 1904.0,
+        "pro": 0.0,
+        "sat": 29.824,
+        "sod": 0.0,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 81.59965152899363,
+      "fat": 6.7099557087183275,
+      "protein": 0.21943265527968264,
+      "salt": 2.1788930263396282,
+      "saturates": 0.93528615868537,
+      "sugars": 0.42417864535751043
+    },
+    "quantity": [
+      {
+        "text": "12"
+      },
+      {
+        "text": "3"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "1"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.food.com/recipe/creamy-french-dressing-55132",
+    "weight_per_ingr": [
+      2860.8,
+      27.9375,
+      15.0,
+      12.600000000000001,
+      6.2,
+      72.0,
+      32.199999999999996,
+      216.0
+    ],
+    "image_paths": [
+      "cal_data/f/8/5/6/f856c0bfec.jpg",
+      "cal_data/b/c/3/a/bc3ae128e2.jpg",
+      "cal_data/d/8/c/f/d8cf50b590.jpg",
+      "cal_data/3/e/3/f/3e3f3624e5.jpg"
+    ]
+  },
+  "0072adb793": {
+    "title": "Mediterranean Spice Mix",
+    "instructions": [
+      {
+        "text": "Mix all ingredients in a bowl."
+      },
+      {
+        "text": "Sprinkle (to taste) on your meat."
+      },
+      {
+        "text": "Makes 1/3 cup."
+      },
+      {
+        "text": "***Tip -- for every 4 servings (1 lb boneless, 2 lb bone in) meat, poultry or fish, mix 2 tbsp Mediterranean Spice Mix, 1 tbsp, vegetable oil, and 1 clove of minced garlic."
+      },
+      {
+        "text": "Rub over food and let sit for 10 minutes (if you make ahead the wet rub; cover& refrigerate for up to 24 hrs)."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "spices, rosemary, dried"
+      },
+      {
+        "text": "spices, cumin seed"
+      },
+      {
+        "text": "spices, coriander seed"
+      },
+      {
+        "text": "spices, oregano, dried"
+      },
+      {
+        "text": "spices, cinnamon, ground"
+      },
+      {
+        "text": "salt, table"
+      }
+    ],
+    "partition": "test",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "red",
+      "saturates": "green",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 1.62,
+        "nrg": 36.0,
+        "pro": 0.54,
+        "sat": 0.792,
+        "sod": 9.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 2.82,
+        "nrg": 48.0,
+        "pro": 2.22,
+        "sat": 0.192,
+        "sod": 24.0,
+        "sug": 0.30000000000000004
+      },
+      {
+        "fat": 1.9200000000000002,
+        "nrg": 30.0,
+        "pro": 1.32,
+        "sat": 0.108,
+        "sod": 6.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.12000000000000001,
+        "nrg": 9.0,
+        "pro": 0.27,
+        "sat": 0.048,
+        "sod": 0.0,
+        "sug": 0.12000000000000001
+      },
+      {
+        "fat": 0.05999999999999999,
+        "nrg": 12.0,
+        "pro": 0.2,
+        "sat": 0.018,
+        "sod": 0.0,
+        "sug": 0.11999999999999998
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 27900.0,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 118.006993006993,
+      "fat": 5.716783216783216,
+      "protein": 3.977272727272727,
+      "salt": 61.055506993006986,
+      "saturates": 1.0122377622377623,
+      "sugars": 0.47202797202797203
+    },
+    "quantity": [
+      {
+        "text": "3"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "12"
+      }
+    ],
+    "unit": [
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      }
+    ],
+    "url": "http://www.food.com/recipe/mediterranean-spice-mix-290157",
+    "weight_per_ingr": [
+      10.8,
+      12.600000000000001,
+      10.8,
+      3.0,
+      5.2,
+      72.0
+    ],
+    "image_paths": [
+      "cal_data/c/5/b/9/c5b9dfc7d0.jpg",
+      "cal_data/0/a/9/9/0a992d1055.jpg",
+      "cal_data/3/1/d/1/31d15e3110.jpg",
+      "cal_data/6/3/f/3/63f332fff0.jpg",
+      "cal_data/8/8/8/7/88877a81a6.jpg",
+      "cal_data/6/9/a/2/69a2ae9495.jpg",
+      "cal_data/0/0/e/9/00e9a50693.jpg",
+      "cal_data/9/3/a/f/93afc89040.jpg",
+      "cal_data/e/b/2/4/eb249116f4.jpg"
+    ]
+  },
+  "007d34c9f3": {
+    "title": "Cheese Cookie Snacks",
+    "instructions": [
+      {
+        "text": "Stir together cheese and butter until blended."
+      },
+      {
+        "text": "Stir in flour and salt; blend well."
+      },
+      {
+        "text": "Stir in cereal."
+      },
+      {
+        "text": "(Dough will be stiff)."
+      },
+      {
+        "text": "Shape dough into 1 inch balls; place on an ungreased baking sheet 2 inches apart."
+      },
+      {
+        "text": "Flatten cookies to 1/4 inch thickness with a fork, makiing a crisscross."
+      },
+      {
+        "text": "Bake at 350* for 15 to 18 minutes."
+      },
+      {
+        "text": "Remove to wire rack to cool."
+      },
+      {
+        "text": "Store in an airtight container."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "cheese, cheddar"
+      },
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "red",
+      "saturates": "red",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 43.97,
+        "nrg": 533.0,
+        "pro": 30.19,
+        "sat": 24.904,
+        "sod": 862.0,
+        "sug": 0.63
+      },
+      {
+        "fat": 2211.84,
+        "nrg": 19584.0,
+        "pro": 23.04,
+        "sat": 1376.4479999999999,
+        "sod": 384.0,
+        "sug": 1.92
+      },
+      {
+        "fat": 1.23,
+        "nrg": 455.0,
+        "pro": 12.91,
+        "sat": 0.194,
+        "sod": 2.0,
+        "sug": 0.34
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 32549.999999999996,
+        "sug": 0.0
+      },
+      {
+        "fat": 3.56,
+        "nrg": 166.0,
+        "pro": 5.94,
+        "sat": 0.725,
+        "sod": 9.0,
+        "sug": 0.63
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 628.1577512570426,
+      "fat": 68.47398073544556,
+      "protein": 2.1833161688980436,
+      "salt": 2.5600502816986737,
+      "saturates": 42.47504089174289,
+      "sugars": 0.10662143333131399
+    },
+    "quantity": [
+      {
+        "text": "1"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "1"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.food.com/recipe/cheese-cookie-snacks-40555",
+    "weight_per_ingr": [
+      132.0,
+      2726.3999999999996,
+      125.0,
+      83.99999999999999,
+      234.0
+    ],
+    "image_paths": [
+      "cal_data/d/f/2/e/df2e69f8b9.jpg",
+      "cal_data/9/6/1/9/9619e7d7c7.jpg",
+      "cal_data/b/f/1/7/bf17e0e927.jpg",
+      "cal_data/b/5/4/a/b54af89ac9.jpg",
+      "cal_data/e/e/2/4/ee2448e90d.jpg",
+      "cal_data/3/f/4/e/3f4e328f33.jpg",
+      "cal_data/f/f/4/0/ff40c4f993.jpg",
+      "cal_data/8/b/2/c/8b2c929391.jpg",
+      "cal_data/c/a/b/9/cab97a1e48.jpg",
+      "cal_data/e/f/e/6/efe6f3361b.jpg",
+      "cal_data/4/9/d/5/49d553e1ac.jpg",
+      "cal_data/6/b/5/7/6b5702642b.jpg",
+      "cal_data/7/c/d/4/7cd4d3fa51.jpg",
+      "cal_data/9/3/9/0/939058835a.jpg",
+      "cal_data/3/4/b/f/34bfc08b8c.jpg",
+      "cal_data/1/2/9/f/129f121e0f.jpg",
+      "cal_data/d/7/0/2/d702c00ffd.jpg",
+      "cal_data/3/1/c/a/31ca781632.jpg",
+      "cal_data/a/6/2/f/a62f6b1e8d.jpg",
+      "cal_data/1/8/9/0/18903424f1.jpg"
+    ]
+  },
+  "007e2cbe28": {
+    "title": "Fresh Corn Tortillas",
+    "instructions": [
+      {
+        "text": "Preheat a cast-iron griddle over medium-high or an electric griddle set to 422F."
+      },
+      {
+        "text": "Put the masa in the bowl of a standing mixer fitted with the hook attachment."
+      },
+      {
+        "text": "Beat at low speed while gradually adding 1 cup of the water."
+      },
+      {
+        "text": "Add as much of the remaining water 1 tablespoon at a time as needed to make a soft and smooth dough."
+      },
+      {
+        "text": "The dough is the right consistency when a small piece of it can be rolled into a ball between your palms without the dough cracking."
+      },
+      {
+        "text": "Beat for 1 minute more, then use the dough immediately."
+      },
+      {
+        "text": "Roll 3 level tablespoons (1 1/2 ounces) of the dough between your palms to make a 2-inch ball."
+      },
+      {
+        "text": "Line the bottom plate of tortilla press with a circle of plastic (cut from a plastic grocery store bag)."
+      },
+      {
+        "text": "Center the dough over the plastic, top with a second circle of plastic, and press the dough out ot a smooth circle, wiggling the handle of the press gently to flatten the dough evenly."
+      },
+      {
+        "text": "Lift the top of the press, rotate the dough circle so the front of the circle is now at the back, and press again."
+      },
+      {
+        "text": "(Most tortilla presses will make tortillas that are slightly thicker on one side than the other."
+      },
+      {
+        "text": "Rotating the tortilla after the first press will make an evenly thick tortilla that will cook evenly.)"
+      },
+      {
+        "text": "As soon as the tortilla is pressed, place it on the griddle."
+      },
+      {
+        "text": "Cook until the underside start to turn light golden brown in spots, about 2 minutes."
+      },
+      {
+        "text": "Turn and cook unitl the tortilla puffs up."
+      },
+      {
+        "text": "Repeat with the remaining masa, transferring the hot tortillas to a napkin-lined basket if serving them immediately or stacking them on a plate if using them for another recipe."
+      },
+      {
+        "text": "Once you get the hang of it, youll be able to press more tortilla while those on the griddle continue cooking."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "corn, sweet, white, raw"
+      },
+      {
+        "text": "water, bottled, generic"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "green",
+      "salt": "green",
+      "saturates": "green",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 3.64,
+        "nrg": 264.0,
+        "pro": 9.92,
+        "sat": 0.56,
+        "sod": 46.0,
+        "sug": 9.92
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 10.0,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 43.70860927152318,
+      "fat": 0.6026490066225165,
+      "protein": 1.6423841059602646,
+      "salt": 0.023178807947019864,
+      "saturates": 0.09271523178807949,
+      "sugars": 1.6423841059602646
+    },
+    "quantity": [
+      {
+        "text": "2"
+      },
+      {
+        "text": "1 1/4"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.cookstr.com/recipes/fresh-corn-tortillas",
+    "weight_per_ingr": [
+      308.0,
+      296.0
+    ],
+    "image_paths": [
+      "cal_data/3/4/e/7/34e7eb995a.jpg",
+      "cal_data/c/a/a/a/caaad2d5db.jpg",
+      "cal_data/b/e/4/3/be43c68a11.jpg",
+      "cal_data/b/3/a/7/b3a7162f4c.jpg",
+      "cal_data/6/2/e/9/62e910da4a.jpg",
+      "cal_data/7/3/e/4/73e4f7749e.jpg",
+      "cal_data/e/4/5/6/e4561f1c12.jpg",
+      "cal_data/8/8/0/b/880b792f9b.jpg",
+      "cal_data/8/7/4/6/874655dbfb.jpg",
+      "cal_data/a/0/3/7/a037a647bd.jpg",
+      "cal_data/7/f/4/9/7f4906366c.jpg"
+    ]
+  },
+  "008edda9b8": {
+    "title": "Bacon Crunch Bars",
+    "instructions": [
+      {
+        "text": "Line 13x9-inch pan with foil, with ends of foil extending over sides of pan."
+      },
+      {
+        "text": "Spray foil with cooking spray; set aside."
+      },
+      {
+        "text": "Mix sugar, corn syrup and peanut butter in large microwaveable bowl."
+      },
+      {
+        "text": "Microwave on high for two minutes or just until mixture boils, stirring every minute."
+      },
+      {
+        "text": "Combine cereal and bacon."
+      },
+      {
+        "text": "Add to corn syrup mixture; mix until well blended."
+      },
+      {
+        "text": "Press cereal mixture firmly into prepared pan."
+      },
+      {
+        "text": "Cool."
+      },
+      {
+        "text": "Lift bars from pan, using foil handles."
+      },
+      {
+        "text": "Remove foil."
+      },
+      {
+        "text": "Cut into 32 bars to serve."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "sugars, granulated"
+      },
+      {
+        "text": "syrups, corn, light"
+      },
+      {
+        "text": "peanut butter, smooth style, without salt"
+      },
+      {
+        "text": "cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt"
+      },
+      {
+        "text": "bacon, meatless"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "green",
+      "saturates": "red",
+      "sugars": "orange"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 0.0,
+        "nrg": 768.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 0.0,
+        "sug": 201.12000000000003
+      },
+      {
+        "fat": 0.68,
+        "nrg": 965.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 211.0,
+        "sug": 261.79
+      },
+      {
+        "fat": 4471.68,
+        "nrg": 51952.0,
+        "pro": 1933.92,
+        "sat": 898.688,
+        "sod": 1360.0,
+        "sug": 913.92
+      },
+      {
+        "fat": 14.24,
+        "nrg": 664.0,
+        "pro": 23.76,
+        "sat": 2.9,
+        "sod": 36.0,
+        "sug": 2.52
+      },
+      {
+        "fat": 133.90035840000002,
+        "nrg": 1401.59928,
+        "pro": 53.024904799999995,
+        "sat": 20.96502224,
+        "sod": 6645.1228,
+        "sug": 0.0
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 524.1593916318923,
+      "fat": 43.44130266170449,
+      "protein": 18.904368262626324,
+      "salt": 0.19396328121944395,
+      "saturates": 8.673715388364558,
+      "sugars": 12.968457132026199
+    },
+    "quantity": [
+      {
+        "text": "1"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "34"
+      },
+      {
+        "text": "4"
+      },
+      {
+        "text": "1"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "pound"
+      }
+    ],
+    "url": "http://www.food.com/recipe/bacon-crunch-bars-139230",
+    "weight_per_ingr": [
+      201.60000000000002,
+      341.0,
+      8704.0,
+      936.0,
+      453.592
+    ],
+    "image_paths": [
+      "cal_data/f/2/8/5/f2859daaac.jpg",
+      "cal_data/7/5/7/4/7574df989f.jpg",
+      "cal_data/f/9/4/3/f943a30c2e.jpg",
+      "cal_data/5/7/0/2/5702733f5f.jpg",
+      "cal_data/8/0/2/0/8020c539c9.jpg",
+      "cal_data/7/f/f/5/7ff57c1e7f.jpg",
+      "cal_data/f/2/1/6/f216d80d85.jpg",
+      "cal_data/8/5/6/0/8560b5b538.jpg",
+      "cal_data/2/d/3/9/2d3929fe08.jpg",
+      "cal_data/d/3/d/b/d3db94d2e3.jpg",
+      "cal_data/a/1/5/1/a151e43a49.jpg"
+    ]
+  },
+  "009365841b": {
+    "title": "Ethiopian Spicy Cheese Dip",
+    "instructions": [
+      {
+        "text": "Preparation:."
+      },
+      {
+        "text": "In a bowl, flake the cheese with forks."
+      },
+      {
+        "text": "In small pot, on a law heat, melt the butter; remove from heat; add Mitmita (cayenne pepper), false cardamom, white pepper and garlic powder."
+      },
+      {
+        "text": "Pour the melted spiced butter on the cheese; mix well until completely marinated."
+      },
+      {
+        "text": "Keep it in the fridge and serve it cold."
+      },
+      {
+        "text": "P.S."
+      },
+      {
+        "text": "If home-made cheese is needed, you may boil 2 gallons of buttermilk at a lower heat, with a pinch of salt and one lemon juice, stirring continuously."
+      },
+      {
+        "text": "leave it to cool, strain and discard the water."
+      },
+      {
+        "text": "* You will find these spices in Ethiopian or Indian shops/groceries."
+      },
+      {
+        "text": "** To to prepare Clarified Butter (Nitir Kebe).go to www."
+      },
+      {
+        "text": "yewoinfamilycooking.com."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "cheese, parmesan, hard"
+      },
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "spices, pepper, red or cayenne"
+      },
+      {
+        "text": "spices, garlic powder"
+      },
+      {
+        "text": "spices, cardamom"
+      },
+      {
+        "text": "spices, pepper, black"
+      }
+    ],
+    "partition": "test",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "red",
+      "saturates": "red",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 234.32562719999996,
+        "nrg": 3556.16128,
+        "pro": 324.31827999999996,
+        "sat": 148.8688944,
+        "sod": 12482.85184,
+        "sug": 7.257472
+      },
+      {
+        "fat": 23.04,
+        "nrg": 204.0,
+        "pro": 0.24,
+        "sat": 14.338,
+        "sod": 4.0,
+        "sug": 0.02
+      },
+      {
+        "fat": 0.62,
+        "nrg": 12.0,
+        "pro": 0.44,
+        "sat": 0.118,
+        "sod": 2.0,
+        "sug": 0.37999999999999995
+      },
+      {
+        "fat": 0.27999999999999997,
+        "nrg": 139.99999999999997,
+        "pro": 7.14,
+        "sat": 0.11199999999999999,
+        "sod": 27.999999999999996,
+        "sug": 1.1199999999999999
+      },
+      {
+        "fat": 1.8199999999999998,
+        "nrg": 84.0,
+        "pro": 3.08,
+        "sat": 0.19599999999999998,
+        "sod": 0.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.98,
+        "nrg": 84.0,
+        "pro": 3.36,
+        "sat": 0.44799999999999995,
+        "sod": 0.0,
+        "sug": 0.13999999999999999
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 391.27578482216836,
+      "fat": 25.03544619019854,
+      "protein": 32.468687666861015,
+      "salt": 3.0008256359898122,
+      "saturates": 15.734887992144106,
+      "sugars": 0.8551600331420507
+    },
+    "quantity": [
+      {
+        "text": "2"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "14"
+      }
+    ],
+    "unit": [
+      {
+        "text": "pound"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      }
+    ],
+    "url": "http://www.food.com/recipe/ethiopian-spicy-cheese-dip-347075",
+    "weight_per_ingr": [
+      907.184,
+      28.4,
+      3.6,
+      43.4,
+      27.999999999999996,
+      32.199999999999996
+    ],
+    "image_paths": [
+      "cal_data/3/1/b/6/31b6dc0364.jpg",
+      "cal_data/7/f/c/e/7fce82c985.jpg",
+      "cal_data/5/c/0/2/5c020d2072.jpg",
+      "cal_data/8/5/7/b/857b182443.jpg",
+      "cal_data/e/d/f/c/edfc628abc.jpg",
+      "cal_data/a/9/8/c/a98cc18000.jpg",
+      "cal_data/a/3/c/9/a3c9005eb1.jpg",
+      "cal_data/a/4/d/7/a4d7ccf681.jpg",
+      "cal_data/3/8/e/3/38e3ec8423.jpg",
+      "cal_data/3/7/5/b/375b8dea8e.jpg",
+      "cal_data/1/2/c/5/12c5ccb1eb.jpg",
+      "cal_data/d/f/2/4/df240f02f6.jpg",
+      "cal_data/b/6/d/1/b6d1dd7ab1.jpg",
+      "cal_data/e/c/6/b/ec6b5c3a8d.jpg"
+    ]
+  },
+  "00a63baec1": {
+    "title": "Vegetarian \"chicken\" Fried Steak",
+    "instructions": [
+      {
+        "text": "Slice the mock chicken into small, round steaks."
+      },
+      {
+        "text": "Pour 1/2 cup of the flour into a shallow dish."
+      },
+      {
+        "text": "Pour 1/2 cup of the flour into a second shallow dish and add the cornmeal, paprika, salt, and pepper."
+      },
+      {
+        "text": "Pour the soy milk into a third shallow dish."
+      },
+      {
+        "text": "Dip the steaks into the soy milk and then into the plain flour."
+      },
+      {
+        "text": "Dip into the soy milk again and then into the seasoned flour and cornmeal mixture."
+      },
+      {
+        "text": "Add 2 tablespoons of the oil to the heated skillet and cook 3 steaks at a time."
+      },
+      {
+        "text": "Brown for approximately 2 minutes on each side or until thoroughly cooked."
+      },
+      {
+        "text": "Transfer to a serving platter."
+      },
+      {
+        "text": "Repeat with the remaining oil and steaks."
+      },
+      {
+        "text": "Add the remaining flour to the skillet and cook for 2 minutes."
+      },
+      {
+        "text": "Whisk in the stock and the parsley and season with the salt and pepper."
+      },
+      {
+        "text": "Whisk the nondairy cream into the gravy."
+      },
+      {
+        "text": "Remove from the heat when bubbling."
+      },
+      {
+        "text": "Serve with warm biscuits topped with the gravy."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "chicken, broiler or fryers, breast, skinless, boneless, meat only, raw"
+      },
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "cornmeal, degermed, unenriched, yellow"
+      },
+      {
+        "text": "spices, paprika"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "spices, pepper, black"
+      },
+      {
+        "text": "soymilk, original and vanilla, unfortified"
+      },
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "oil, olive, salad or cooking"
+      },
+      {
+        "text": "shortening, vegetable, household, composite"
+      },
+      {
+        "text": "parsley, fresh"
+      },
+      {
+        "text": "cream, whipped, cream topping, pressurized"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "green",
+      "saturates": "orange",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 10.3985966,
+        "nrg": 476.2715999999999,
+        "pro": 89.30092499999999,
+        "sat": 2.2345075899999998,
+        "sod": 178.60184999999998,
+        "sug": 0.0
+      },
+      {
+        "fat": 1.23,
+        "nrg": 455.0,
+        "pro": 12.91,
+        "sat": 0.194,
+        "sod": 2.0,
+        "sug": 0.34
+      },
+      {
+        "fat": 35.75,
+        "nrg": 7553.0,
+        "pro": 145.08,
+        "sat": 4.484999999999999,
+        "sod": 143.0,
+        "sug": 32.89
+      },
+      {
+        "fat": 0.3,
+        "nrg": 6.0,
+        "pro": 0.33,
+        "sat": 0.048999999999999995,
+        "sod": 2.0,
+        "sug": 0.23999999999999996
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 2325.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.07,
+        "nrg": 6.0,
+        "pro": 0.23999999999999996,
+        "sat": 0.032,
+        "sod": 0.0,
+        "sug": 0.01
+      },
+      {
+        "fat": 51.0,
+        "nrg": 1572.0,
+        "pro": 95.4,
+        "sat": 5.976,
+        "sod": 1488.0,
+        "sug": 116.39999999999999
+      },
+      {
+        "fat": 0.15375,
+        "nrg": 56.875,
+        "pro": 1.61375,
+        "sat": 0.02425,
+        "sod": 0.25,
+        "sug": 0.0425
+      },
+      {
+        "fat": 54.0,
+        "nrg": 476.0,
+        "pro": 0.0,
+        "sat": 7.456,
+        "sod": 0.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 256.0,
+        "nrg": 2260.0,
+        "pro": 0.0,
+        "sat": 63.94,
+        "sod": 20.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.05875,
+        "nrg": 2.75,
+        "pro": 0.2225,
+        "sat": 0.009875,
+        "sod": 4.25,
+        "sug": 0.06375
+      },
+      {
+        "fat": 186.62,
+        "nrg": 2156.0,
+        "pro": 26.88,
+        "sat": 116.18599999999999,
+        "sod": 70.0,
+        "sug": 67.2
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 225.43535589163298,
+      "fat": 8.939145191875024,
+      "protein": 5.583048210178042,
+      "salt": 0.1588377815597412,
+      "saturates": 3.0106278431391376,
+      "sugars": 3.2597734103921314
+    },
+    "quantity": [
+      {
+        "text": "14"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "13"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "4"
+      },
+      {
+        "text": "1 1/4"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "14"
+      }
+    ],
+    "unit": [
+      {
+        "text": "ounce"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.food.com/recipe/vegetarian-chicken-fried-steak-305980",
+    "weight_per_ingr": [
+      396.893,
+      125.0,
+      2041.0,
+      2.3,
+      6.0,
+      2.3,
+      2916.0,
+      15.625,
+      54.0,
+      256.0,
+      7.5,
+      840.0
+    ],
+    "image_paths": [
+      "cal_data/8/e/2/1/8e21526f9a.jpg",
+      "cal_data/b/c/a/0/bca0e66d5e.jpg",
+      "cal_data/1/a/c/4/1ac4c25fed.jpg",
+      "cal_data/b/f/6/c/bf6c95103b.jpg",
+      "cal_data/d/9/9/5/d9959876b8.jpg",
+      "cal_data/b/7/6/c/b76cdc635d.jpg",
+      "cal_data/c/4/d/3/c4d3fab1ba.jpg"
+    ]
+  },
+  "00c4f99b87": {
+    "title": "Bon Appetit Cranberry Margaritas",
+    "instructions": [
+      {
+        "text": "Blend ingredients in blender until smooth."
+      },
+      {
+        "text": "Transfer to large glass measuring cup."
+      },
+      {
+        "text": "Pour half of Margarita base into blender."
+      },
+      {
+        "text": "Add 3 1/2 cups ice cubes."
+      },
+      {
+        "text": "Blend until mixture is slushy; pour into salt-rimmed margarita glasses."
+      },
+      {
+        "text": "Garnish with fresh cranberries."
+      },
+      {
+        "text": "Repeat with remaining Margarita base and 3 1/2 cups ice cubes."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "alcoholic beverage, tequila sunrise, canned"
+      },
+      {
+        "text": "cranberry juice, unsweetened"
+      },
+      {
+        "text": "cranberry sauce, canned, sweetened"
+      },
+      {
+        "text": "lime juice, raw"
+      },
+      {
+        "text": "orange juice, raw"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "green",
+      "salt": "green",
+      "saturates": "green",
+      "sugars": "orange"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 0.3,
+        "nrg": 340.0,
+        "pro": 0.8999999999999999,
+        "sat": 0.0,
+        "sod": 180.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.41250000000000003,
+        "nrg": 145.0,
+        "pro": 1.2375,
+        "sat": 0.03125,
+        "sod": 6.25,
+        "sug": 38.2625
+      },
+      {
+        "fat": 0.42,
+        "nrg": 440.0,
+        "pro": 2.49,
+        "sat": 0.019,
+        "sod": 14.0,
+        "sug": 87.95
+      },
+      {
+        "fat": 0.10625000000000001,
+        "nrg": 37.5,
+        "pro": 0.6375,
+        "sat": 0.011875,
+        "sod": 3.125,
+        "sug": 2.55625
+      },
+      {
+        "fat": 0.1875,
+        "nrg": 42.0,
+        "pro": 0.6525,
+        "sat": 0.0225,
+        "sod": 0.75,
+        "sug": 7.811249999999999
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 87.46190683500218,
+      "fat": 0.12418371789290378,
+      "protein": 0.5152372659991293,
+      "salt": 0.04443295602960383,
+      "saturates": 0.007368306486721812,
+      "sugars": 11.892033086634742
+    },
+    "quantity": [
+      {
+        "text": "1 1/4"
+      },
+      {
+        "text": "1 1/4"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "10"
+      },
+      {
+        "text": "6"
+      }
+    ],
+    "unit": [
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "tablespoon"
+      }
+    ],
+    "url": "http://www.food.com/recipe/bon-appetit-cranberry-margaritas-204520",
+    "weight_per_ingr": [
+      311.0,
+      316.25,
+      277.0,
+      151.25,
+      93.0
+    ],
+    "image_paths": [
+      "cal_data/1/1/8/0/1180101ef1.jpg",
+      "cal_data/a/9/2/e/a92ec4e58f.jpg",
+      "cal_data/5/d/2/3/5d23915989.jpg",
+      "cal_data/0/6/c/c/06cccb244f.jpg",
+      "cal_data/5/2/4/c/524c5bb157.jpg",
+      "cal_data/5/6/8/5/56852b4ea8.jpg",
+      "cal_data/9/0/3/7/90373ee93c.jpg",
+      "cal_data/a/f/1/8/af18ab316f.jpg",
+      "cal_data/b/3/4/f/b34f132a02.jpg",
+      "cal_data/9/5/4/0/9540c4b18d.jpg",
+      "cal_data/a/4/9/3/a493e1ee99.jpg",
+      "cal_data/8/a/8/7/8a871c19b4.jpg",
+      "cal_data/a/6/5/2/a65258d170.jpg",
+      "cal_data/1/4/a/d/14ad159fda.jpg",
+      "cal_data/6/e/2/1/6e2171949d.jpg",
+      "cal_data/a/b/b/c/abbc0c0163.jpg",
+      "cal_data/3/7/2/5/37254889b3.jpg",
+      "cal_data/3/f/5/0/3f50d09592.jpg"
+    ]
+  },
+  "00d3780718": {
+    "title": "Cheese Buttons",
+    "instructions": [
+      {
+        "text": "Preheat oven to 400 degrees F. Mix all ingredients together until dough forms into a ball."
+      },
+      {
+        "text": "Shape dough into 1-inch balls."
+      },
+      {
+        "text": "Place 2 inches apart on a parchment lined baking sheet."
+      },
+      {
+        "text": "Bake at 400 degrees for 7 to 8 minutes."
+      },
+      {
+        "text": "Let stand for 2 minutes; remove to wire racks to cool."
+      },
+      {
+        "text": "You can also freeze unbaked balls in a single layer and then place in a plastic bag once fully frozen."
+      },
+      {
+        "text": "Bake the frozen balls at 400 degrees for about 15 minutes."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "cheese, cheddar"
+      },
+      {
+        "text": "wheat flour, white, all-purpose, unenriched"
+      },
+      {
+        "text": "butter, without salt"
+      },
+      {
+        "text": "salt, table"
+      },
+      {
+        "text": "spices, pepper, red or cayenne"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "red",
+      "salt": "orange",
+      "saturates": "red",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 75.5457476,
+        "nrg": 916.2558399999999,
+        "pro": 51.868245200000004,
+        "sat": 42.78960132,
+        "sod": 1480.97788,
+        "sug": 1.0886208
+      },
+      {
+        "fat": 1.23,
+        "nrg": 455.0,
+        "pro": 12.91,
+        "sat": 0.194,
+        "sod": 2.0,
+        "sug": 0.34
+      },
+      {
+        "fat": 92.16,
+        "nrg": 816.0,
+        "pro": 0.96,
+        "sat": 57.352,
+        "sod": 16.0,
+        "sug": 0.08
+      },
+      {
+        "fat": 0.0,
+        "nrg": 0.0,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 145.08,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.0775,
+        "nrg": 1.5,
+        "pro": 0.055,
+        "sat": 0.01475,
+        "sod": 0.25,
+        "sug": 0.047499999999999994
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 469.4680541649401,
+      "fat": 36.25179155609665,
+      "protein": 14.112047692464769,
+      "salt": 0.8817223999636224,
+      "saturates": 21.52423002511259,
+      "sugars": 0.3337736401066964
+    },
+    "quantity": [
+      {
+        "text": "8"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "1/2"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "1/4"
+      }
+    ],
+    "unit": [
+      {
+        "text": "ounce"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "pinch"
+      },
+      {
+        "text": "teaspoon"
+      }
+    ],
+    "url": "http://tastykitchen.com/recipes/appetizers-and-snacks/cheese-buttons/",
+    "weight_per_ingr": [
+      226.796,
+      125.0,
+      113.6,
+      0.37439999999999996,
+      0.45
+    ],
+    "image_paths": [
+      "cal_data/d/1/f/6/d1f659568c.jpg",
+      "cal_data/f/9/5/d/f95d996b6a.jpg",
+      "cal_data/f/1/f/1/f1f19b1ae0.jpg",
+      "cal_data/b/8/6/3/b863a2ed64.jpg",
+      "cal_data/0/c/1/1/0c11f18d0f.jpg",
+      "cal_data/2/8/f/3/28f3dc5482.jpg",
+      "cal_data/2/5/8/7/25871f1ae7.jpg",
+      "cal_data/0/0/6/a/006ae82f4b.jpg",
+      "cal_data/f/b/1/7/fb1767e275.jpg",
+      "cal_data/8/a/c/f/8acff6a487.jpg",
+      "cal_data/d/0/1/1/d011e0e5b3.jpg",
+      "cal_data/a/6/4/c/a64cfec1b0.jpg",
+      "cal_data/b/6/a/9/b6a99c861d.jpg",
+      "cal_data/5/4/1/2/541247f9a0.jpg",
+      "cal_data/9/9/8/5/9985eda0ec.jpg",
+      "cal_data/1/b/2/b/1b2b81df8b.jpg",
+      "cal_data/b/c/e/2/bce2461a8d.jpg",
+      "cal_data/4/c/5/b/4c5bf891e0.jpg",
+      "cal_data/e/9/c/b/e9cb802073.jpg",
+      "cal_data/4/e/4/2/4e42c4b223.jpg",
+      "cal_data/9/2/b/2/92b2705cd4.jpg",
+      "cal_data/b/3/1/0/b310f8da3a.jpg",
+      "cal_data/e/2/b/4/e2b4519195.jpg",
+      "cal_data/0/3/6/e/036e2893e0.jpg"
+    ]
+  },
+  "00d5a21ab9": {
+    "title": "Passover Apples and Honey (Charoset)",
+    "instructions": [
+      {
+        "text": "In a bowl, mix the honey, cinnamon, apples, grape juice, and walnuts together until thoroughly combined."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "honey"
+      },
+      {
+        "text": "spices, cinnamon, ground"
+      },
+      {
+        "text": "apples, raw, with skin"
+      },
+      {
+        "text": "grapes, red or green (european type, such as thompson seedless), raw"
+      },
+      {
+        "text": "nuts, walnuts, english"
+      }
+    ],
+    "partition": "val",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "green",
+      "saturates": "green",
+      "sugars": "orange"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 0.0,
+        "nrg": 96.65625,
+        "pro": 0.095625,
+        "sat": 0.0,
+        "sod": 1.3125,
+        "sug": 26.0990625
+      },
+      {
+        "fat": 0.36,
+        "nrg": 72.0,
+        "pro": 1.2000000000000002,
+        "sat": 0.108,
+        "sod": 0.0,
+        "sug": 0.72
+      },
+      {
+        "fat": 1.05,
+        "nrg": 325.0,
+        "pro": 1.6500000000000001,
+        "sat": 0.17500000000000002,
+        "sod": 5.0,
+        "sug": 64.95
+      },
+      {
+        "fat": 0.48,
+        "nrg": 208.0,
+        "pro": 2.18,
+        "sat": 0.164,
+        "sod": 6.0,
+        "sug": 46.74
+      },
+      {
+        "fat": 76.3,
+        "nrg": 765.0,
+        "pro": 17.82,
+        "sat": 7.167,
+        "sod": 2.0,
+        "sug": 3.05
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 132.49151690690334,
+      "fat": 7.063353602420998,
+      "protein": 2.072810628002958,
+      "salt": 0.0032323266541325786,
+      "saturates": 0.6878165280577245,
+      "sugars": 12.787846451780464
+    },
+    "quantity": [
+      {
+        "text": "1 1/2"
+      },
+      {
+        "text": "1/4"
+      },
+      {
+        "text": "5"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "1"
+      }
+    ],
+    "unit": [
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://allrecipes.com/recipe/passover-apples-and-honey-charoset/",
+    "weight_per_ingr": [
+      31.78125,
+      31.200000000000003,
+      625.0,
+      302.0,
+      117.0
+    ],
+    "image_paths": [
+      "cal_data/e/f/7/6/ef76ba922e.jpg",
+      "cal_data/f/7/7/4/f7743fb881.jpg",
+      "cal_data/6/3/b/f/63bfd82bc8.jpg",
+      "cal_data/9/d/7/f/9d7fe5f892.jpg",
+      "cal_data/4/5/7/e/457ebfa9f1.jpg",
+      "cal_data/e/2/0/5/e2051cda71.jpg",
+      "cal_data/8/6/b/0/86b0c8d8bd.jpg",
+      "cal_data/d/7/8/2/d782b5860f.jpg",
+      "cal_data/8/5/1/3/85131d5289.jpg",
+      "cal_data/d/6/3/5/d635a83ec0.jpg",
+      "cal_data/6/c/e/f/6cef2f9b1c.jpg"
+    ]
+  },
+  "00e573fea4": {
+    "title": "Maple-Glazed Sweet Potatoes",
+    "instructions": [
+      {
+        "text": "Preheat oven to 400F."
+      },
+      {
+        "text": "Oil 2 large rimmed baking sheets with 1 tablespoon oil each."
+      },
+      {
+        "text": "Combine sweet potatoes and remaining 2 tablespoons oil in large bowl; toss."
+      },
+      {
+        "text": "Divide sweet potatoes between baking sheets, spreading evenly."
+      },
+      {
+        "text": "Sprinkle with salt and pepper."
+      },
+      {
+        "text": "Roast until almost tender, turning occasionally with metal spatula, about 35 minutes."
+      },
+      {
+        "text": "(Can be prepared 2 hours ahead."
+      },
+      {
+        "text": "Let stand uncovered at room temperature.)"
+      },
+      {
+        "text": "Drizzle maple syrup over sweet potatoes and toss to coat."
+      },
+      {
+        "text": "Roast until sweet potatoes are tender and syrup is reduced to glaze and coats sweet potatoes, about 20 minutes."
+      },
+      {
+        "text": "Remove from oven; scatter butter cubes over sweet potatoes and let stand until melted."
+      },
+      {
+        "text": "Season to taste with salt and generous amount of cracked pepper."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "oil, olive, salad or cooking"
+      },
+      {
+        "text": "sweet potato, raw, unprepared"
+      },
+      {
+        "text": "syrup, maple, canadian"
+      },
+      {
+        "text": "butter, without salt"
+      }
+    ],
+    "partition": "train",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "green",
+      "saturates": "green",
+      "sugars": "orange"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 54.0,
+        "nrg": 476.0,
+        "pro": 0.0,
+        "sat": 7.456,
+        "sod": 0.0,
+        "sug": 0.0
+      },
+      {
+        "fat": 0.907184,
+        "nrg": 1560.35648,
+        "pro": 28.485577600000003,
+        "sat": 0.32658623999999997,
+        "sod": 997.9024000000001,
+        "sug": 75.84058239999999
+      },
+      {
+        "fat": 0.0,
+        "nrg": 428.57142857142856,
+        "pro": 0.0,
+        "sat": 0.0,
+        "sod": 13.88888888888889,
+        "sug": 95.11904761904762
+      },
+      {
+        "fat": 34.56,
+        "nrg": 306.0,
+        "pro": 0.36,
+        "sat": 21.506999999999998,
+        "sod": 6.0,
+        "sug": 0.03
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 133.88077371975348,
+      "fat": 4.322716509294845,
+      "protein": 1.3937093908272062,
+      "salt": 0.12293957993291929,
+      "saturates": 1.415162211767648,
+      "sugars": 8.261573278103338
+    },
+    "quantity": [
+      {
+        "text": "4"
+      },
+      {
+        "text": "4"
+      },
+      {
+        "text": "1/2"
+      },
+      {
+        "text": "3"
+      }
+    ],
+    "unit": [
+      {
+        "text": "tablespoon"
+      },
+      {
+        "text": "pound"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "tablespoon"
+      }
+    ],
+    "url": "http://www.epicurious.com/recipes/food/views/maple-glazed-sweet-potatoes-233163",
+    "weight_per_ingr": [
+      54.0,
+      1814.368,
+      158.73015873015873,
+      42.599999999999994
+    ],
+    "image_paths": [
+      "cal_data/d/6/1/a/d61ad7015e.jpg",
+      "cal_data/f/9/f/0/f9f067083a.jpg"
+    ]
+  },
+  "00f4897bf7": {
+    "title": "Macedonian Sausages Filling",
+    "instructions": [
+      {
+        "text": "Mix ground pork, leeks, red pepper, black pepper, cumin, oregano, garlic powder, and paprika together."
+      },
+      {
+        "text": "Stuff in casings."
+      }
+    ],
+    "ingredients": [
+      {
+        "text": "pork, fresh, loin, tenderloin, separable lean only, raw"
+      },
+      {
+        "text": "leeks, (bulb and lower leaf-portion), raw"
+      },
+      {
+        "text": "spices, pepper, red or cayenne"
+      },
+      {
+        "text": "spices, pepper, black"
+      },
+      {
+        "text": "spices, cumin seed"
+      },
+      {
+        "text": "spices, oregano, dried"
+      },
+      {
+        "text": "spices, garlic powder"
+      },
+      {
+        "text": "spices, paprika"
+      }
+    ],
+    "partition": "val",
+    "fsa_lights_per100g": {
+      "fat": "orange",
+      "salt": "green",
+      "saturates": "green",
+      "sugars": "green"
+    },
+    "nutr_per_ingredient": [
+      {
+        "fat": 98.42946400000001,
+        "nrg": 4944.152800000001,
+        "pro": 950.2752399999999,
+        "sat": 31.6607216,
+        "sod": 2404.0376,
+        "sug": 0.0
+      },
+      {
+        "fat": 3.40194,
+        "nrg": 691.7278,
+        "pro": 17.0097,
+        "sat": 0.45359200000000005,
+        "sod": 226.79600000000002,
+        "sug": 44.22522
+      },
+      {
+        "fat": 267.84000000000003,
+        "nrg": 5184.0,
+        "pro": 190.08,
+        "sat": 50.97599999999999,
+        "sod": 864.0,
+        "sug": 164.16
+      },
+      {
+        "fat": 60.48000000000001,
+        "nrg": 5184.0,
+        "pro": 207.36,
+        "sat": 27.648000000000003,
+        "sod": 0.0,
+        "sug": 8.64
+      },
+      {
+        "fat": 0.47,
+        "nrg": 8.0,
+        "pro": 0.37,
+        "sat": 0.032,
+        "sod": 4.0,
+        "sug": 0.05
+      },
+      {
+        "fat": 222.72,
+        "nrg": 16704.0,
+        "pro": 501.12,
+        "sat": 89.08800000000001,
+        "sod": 0.0,
+        "sug": 222.72
+      },
+      {
+        "fat": 17.28,
+        "nrg": 8640.0,
+        "pro": 440.64,
+        "sat": 6.912000000000001,
+        "sod": 1728.0,
+        "sug": 69.12
+      },
+      {
+        "fat": 259.2,
+        "nrg": 5184.0,
+        "pro": 285.12000000000006,
+        "sat": 42.336000000000006,
+        "sod": 1728.0,
+        "sug": 207.36
+      }
+    ],
+    "nutr_values_per100g": {
+      "energy": 239.30419888934597,
+      "fat": 4.781064397367339,
+      "protein": 13.32771976552859,
+      "salt": 0.08940294117647059,
+      "saturates": 1.2808839654463184,
+      "sugars": 3.6830276635129575
+    },
+    "quantity": [
+      {
+        "text": "10"
+      },
+      {
+        "text": "2 1/2"
+      },
+      {
+        "text": "18"
+      },
+      {
+        "text": "18"
+      },
+      {
+        "text": "1"
+      },
+      {
+        "text": "116"
+      },
+      {
+        "text": "18"
+      },
+      {
+        "text": "18"
+      }
+    ],
+    "unit": [
+      {
+        "text": "pound"
+      },
+      {
+        "text": "pound"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "teaspoon"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      },
+      {
+        "text": "cup"
+      }
+    ],
+    "url": "http://www.food.com/recipe/macedonian-sausages-filling-425584",
+    "weight_per_ingr": [
+      4535.92,
+      1133.98,
+      1555.2,
+      1987.1999999999998,
+      2.1,
+      5568.0,
+      2678.4,
+      1987.1999999999998
+    ],
+    "image_paths": [
+      "cal_data/9/0/0/4/900460e882.jpg",
+      "cal_data/4/c/5/8/4c58a9764e.jpg",
+      "cal_data/0/a/5/8/0a58fbf947.jpg",
+      "cal_data/c/3/0/9/c30946a8d0.jpg",
+      "cal_data/8/2/c/8/82c852b363.jpg",
+      "cal_data/1/3/a/0/13a01ec6fb.jpg",
+      "cal_data/6/9/7/e/697e53d078.jpg",
+      "cal_data/b/4/6/c/b46c1461c7.jpg",
+      "cal_data/2/3/9/0/23904dd2bb.jpg",
+      "cal_data/d/b/0/b/db0b9e1480.jpg",
+      "cal_data/f/3/b/f/f3bf9baaeb.jpg",
+      "cal_data/1/3/9/7/1397419441.jpg",
+      "cal_data/3/7/c/5/37c5a364e4.jpg",
+      "cal_data/b/3/a/5/b3a5c59cff.jpg",
+      "cal_data/a/c/a/e/acaeabfd76.jpg",
+      "cal_data/f/0/5/3/f0532a02d7.jpg",
+      "cal_data/2/e/4/8/2e48082eab.jpg",
+      "cal_data/9/7/b/1/97b1dabd28.jpg",
+      "cal_data/f/d/d/5/fdd5810da9.jpg",
+      "cal_data/c/e/4/c/ce4c0c6950.jpg"
+    ]
+  }
+}
